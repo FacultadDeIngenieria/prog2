@@ -12,7 +12,7 @@
 ### Trabajos Prácticos
 1. TP1:
     - [Agregar Tipos](exercises/types/README.md)  
-    - [Ecuación de Segundo Grado](exercises/eq/README.md)
+    - [Ecuación de Segundo Grado](exercises/eq-snd-grade/README.md)
 2. Algebra de Matrices
 	- [Matrices](exercises/matrices/README.md)
 
