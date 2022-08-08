@@ -5,15 +5,15 @@
 ### Temas teórica:
 1. [Tipos](classes/Class-01.slides.html)
 2. [Tipos 2. Tuplas. Excepciones. Matrices.](classes/Class-02.slides.html)
-3. [Sistemas de Numeración](classes/Class-03.slides.html)
-4. [Diccionarios y Sets](classes/Class-04.slides.html)
+3. [Diccionarios y Sets](classes/Class-04.slides.html)
+4. [Sistemas de Numeración](classes/Class-03.slides.html)
 
 
 ### Trabajos Prácticos
-1. TP1: Ecuación de Segundo Grado 
-    - [Ecuación de Segundo Grado](exercises/tp1/eq-snd-grade.md)
-2. TP2: Algebra de Matrices
-	- [Matrices](exercises/matrices/README.md)
+1. TP1: Agregar tipos a ejercicios de Prog 1
+2. TP2:
+   - [Ecuación de Segundo Grado](exercises/tp1/eq-snd-grade.md)
+	- [Multiplicación de matrices](exercises/matrix/README.md)
 
 ### Calendario
 #### Comisión 1 (Lunes 9 a 13)
@@ -54,11 +54,6 @@
 
 
 ## Bibliografía
-
-<!--* [Haskell oficial web site](https://www.haskell.org)
-* [Learn You a Haskell for Great Good](http://learnyouahaskell.com)
-* [A gentle introduction to Haskell](files/haskell-98-tutorial.pdf)
--->
 
 
 
