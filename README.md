@@ -5,8 +5,9 @@
 ### Temas teórica:
 1. [Tipos](classes/Class-01.slides.html)
 2. [Tipos 2. Tuplas. Excepciones. Matrices.](classes/Class-02.slides.html)
-3. [Diccionarios y Sets](classes/Class-04.slides.html)
-4. [Sistemas de Numeración](classes/Class-03.slides.html)
+3. [Diccionarios y Sets](classes/Class-03.slides.html)
+4. [Testing and Debugging](classes/Class-04.slides.html)
+
 
 
 ### Trabajos Prácticos
@@ -14,6 +15,12 @@
 2. TP2:
    - [Ecuación de Segundo Grado](exercises/tp1/eq-snd-grade.md)
 	- [Multiplicación de matrices](exercises/matrix/README.md)
+3. TP3:
+   - [Inventory Management](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-inventory-management)
+   - [Word Count](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-word-count)
+   - [Cater Waiter](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-cater-waiter)
+4. TP4:
+	- [Fraction]  
 
 ### Calendario
 #### Comisión 1 (Lunes 9 a 13)
