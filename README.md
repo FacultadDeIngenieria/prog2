@@ -7,7 +7,7 @@
 2. [Tipos 2. Tuplas. Excepciones. Matrices.](classes/Class-02.slides.html)
 3. [Diccionarios y Sets](classes/Class-03.slides.html)
 4. [Testing and Debugging](classes/Class-04.slides.html)
-
+5. [Clases](classes/Class-05.slides.html)
 
 
 ### Trabajos Prácticos
@@ -20,7 +20,7 @@
    - [Word Count](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-word-count)
    - [Cater Waiter](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-cater-waiter)
 4. TP4:
-	- [Fraction]  
+	- [Fraction](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-4-fraction)  
 
 ### Calendario
 #### Comisión 1 (Lunes 9 a 13)
