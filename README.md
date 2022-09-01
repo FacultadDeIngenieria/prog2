@@ -11,16 +11,18 @@
 
 
 ### Trabajos Prácticos
-1. TP1: Agregar tipos a ejercicios de Prog 1
+1. TP1:
+   - [Typing](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/trying-types)
 2. TP2:
-   - [Ecuación de Segundo Grado](exercises/tp1/eq-snd-grade.md)
-	- [Multiplicación de matrices](exercises/matrix/README.md)
+   - [Ecuación de Segundo Grado](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-1-quadratic-equation)
+   - [Multiplicación de matrices](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-1-matrix)
 3. TP3:
    - [Inventory Management](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-inventory-management)
    - [Word Count](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-word-count)
    - [Cater Waiter](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-3-cater-waiter)
 4. TP4:
-	- [Fraction](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-4-fraction)  
+   - [Fraction](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-4-fraction)  
+   - [Matrices](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-2-matrix-and-exceptions)
 5. TP5:
    - [School](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/school)  
 	
