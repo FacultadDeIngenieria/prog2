@@ -11,6 +11,9 @@
 
 
 ### Trabajos Prácticos
+
+[Site de Exercism](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track)
+
 1. TP1:
    - [Typing](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/trying-types)
 2. TP2:
