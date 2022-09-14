@@ -28,6 +28,10 @@
    - [Matrices](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-2-matrix-and-exceptions)
 5. TP5:
    - [School](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/school)  
+
+### Ejercicios Práctica
+
+- [Simple Exercises](exercises/simple_exercises.md)   
 	
 
 ### Calendario
