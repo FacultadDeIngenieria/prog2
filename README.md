@@ -8,6 +8,7 @@
 3. [Diccionarios y Sets](classes/Class-03.slides.html)
 4. [Testing and Debugging](classes/Class-04.slides.html)
 5. [Clases](classes/Class-05.slides.html)
+6. [Sistemas de Numeración](classes/Class-06.slides.html)
 
 
 ### Trabajos Prácticos
@@ -27,7 +28,9 @@
    - [Fraction](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-4-fraction)  
    - [Matrices](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-2-matrix-and-exceptions)
 5. TP5:
-   - [School](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/school)  
+   - [School](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/school) 
+6. TP6
+   - [XOR encryption](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-6-xor) 
 
 ### Ejercicios Práctica
 
