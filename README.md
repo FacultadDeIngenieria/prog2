@@ -9,6 +9,7 @@
 4. [Testing and Debugging](classes/Class-04.slides.html)
 5. [Clases](classes/Class-05.slides.html)
 6. [Sistemas de Numeración](classes/Class-06.slides.html)
+7. [Higher Order Functions](classes/Class-07.slides.html)
 
 
 ### Trabajos Prácticos
