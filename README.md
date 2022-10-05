@@ -32,6 +32,10 @@
    - [School](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/school) 
 6. TP6
    - [XOR encryption](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-6-xor) 
+7. TP7
+   - [Sum of multiples](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-7-sum-of-multiples) 
+   - [Protein translation](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-7-protein-translation) 
+   - [Trapezoid rule](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-7-trapezoid-rule) 
 
 ### Ejercicios Práctica
 
