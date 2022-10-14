@@ -76,8 +76,8 @@
 11. 21 Octubre
 12. 28 Octubre
 13. 4 Noviembre 
-14. 11 Noviembre 
-15. 18 Noviembre (Segundo Parcial)
+14. 11 Noviembre (Segundo Parcial) 
+15. 18 Noviembre 
 
 
 ## Bibliografía
