@@ -37,6 +37,10 @@
    - [Sum of multiples](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-7-sum-of-multiples) 
    - [Protein translation](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-7-protein-translation) 
    - [Trapezoid rule](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-7-trapezoid-rule) 
+8. TP8
+   - [Shapes](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-8-shapes) 
+9. TP9
+   - [Quadratic](exercises/quadratic-java.zip) 
 
 ### Ejercicios Práctica
 
