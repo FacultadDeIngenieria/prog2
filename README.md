@@ -40,7 +40,7 @@
 8. TP8
    - [Shapes](http://facultaddeingenieria.duckdns.org:3020/tracks/exercism-prog2-track/exercises/tp-8-shapes) 
 9. TP9
-   - [Quadratic](exercises/quadratic-java.zip) 
+   - [Quadratic](https://github.com/FacultadDeIngenieria/prog2/raw/424dd7ed327c0572ea136d7ec87f37236b8692ac/exercises/quadratic-java.zip) 
 
 ### Ejercicios Práctica
 
