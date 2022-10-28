@@ -14880,49 +14880,21 @@ java Hello             <span class="c1"># Run the program</span>
 </div>
 </div>
 </div>
-</div><div class="fragment" ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment" >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="o">*</span><span class="w"> </span><span class="n">Immutable</span><span class="w"> </span><span class="p">(</span><span class="n">You</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">it</span><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">Map</span><span class="p">.</span><span class="na">of</span><span class="err">`</span><span class="w"> </span>
-<span class="o">*</span><span class="w"> </span><span class="n">Simple</span><span class="w"> </span><span class="n">mutable</span><span class="w"> </span><span class="err">`</span><span class="n">Map</span><span class="err">`</span><span class="w"> </span><span class="p">(</span><span class="err">`</span><span class="n">HashMap</span><span class="err">`</span><span class="p">)</span><span class="w"></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">* Immutable (You can not modify it) `Map.of` </span>
-<span class="ansi-red-intense-fg ansi-bold">illegal start of expression</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">* Immutable (You</span><span class="ansi-black-intense-fg ansi-bold"> can not modify it) `Map.of` </span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;)&#39; or &#39;,&#39; expected</span>
-</pre>
-</div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Immutable (You can not modify it) <code>Map.of</code></li>
+<li>Simple mutable <code>Map</code> (<code>HashMap</code>)</li>
+</ul>
 
 </div>
-
 </div>
-
+</div>
 </div></div><div class="fragment" ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15537,7 +15509,7 @@ Garfield says: Meow...
 <li><p>Interfaces are useful for:</p>
 <ul>
 <li>Capturing similarities among unrelated classes.</li>
-<li>Without artificially forcing a class relationship.</li>
+<li>.. without artificially forcing a class relationship.</li>
 <li>Declaring methods that one or more classes are expected to implement.</li>
 </ul>
 </li>
@@ -15653,11 +15625,14 @@ Garfield says: Meow...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>var list1 = new ArrayList<Shape>();
-var list2 = new ArrayList<String>();</p>
-<p>list1.add(new Circle(1.0)); // OK!
-list2.add(&quot;Hello&quot;);         // OK!</p>
-<p>list1.add(&quot;Hello&quot;);         // Error!</p>
+<div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="n">list1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Shape</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="n">list2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+
+<span class="n">list1</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Circle</span><span class="p">(</span><span class="mf">1.0</span><span class="p">));</span><span class="w"> </span><span class="c1">// OK!</span><span class="w"></span>
+<span class="n">list2</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span><span class="w">         </span><span class="c1">// OK!</span><span class="w"></span>
+
+<span class="n">list1</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span><span class="w">         </span><span class="c1">// Error!</span><span class="w"></span>
+</pre></div>
 
 </div>
 </div>
@@ -15691,15 +15666,14 @@ list2.add(&quot;Hello&quot;);         // OK!</p>
 </div>
 </div>
 </div>
-</div><div class="fragment" ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment" >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Pair</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">U</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Pair</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">U</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="n">first</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">U</span><span class="w"> </span><span class="n">second</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">Pair</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">U</span><span class="w"> </span><span class="n">second</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -15714,38 +15688,13 @@ list2.add(&quot;Hello&quot;);         // OK!</p>
 <span class="n">p1</span><span class="p">.</span><span class="na">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w">  </span><span class="c1">// Ok!</span><span class="w"></span>
 <span class="n">p2</span><span class="p">.</span><span class="na">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// Ok!</span><span class="w"></span>
 
-<span class="c1">//p2.first = 20;  // Error</span><span class="w"></span>
-<span class="c1">// p1 = p2;        // Error</span><span class="w"></span>
+<span class="n">p2</span><span class="p">.</span><span class="na">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w">  </span><span class="c1">// Error</span><span class="w"></span>
+<span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p2</span><span class="p">;</span><span class="w">        </span><span class="c1">// Error</span><span class="w"></span>
 </pre></div>
 
-     </div>
 </div>
 </div>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>20</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div></div></section></section>
 </div>
 </div>
