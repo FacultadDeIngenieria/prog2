@@ -12,7 +12,7 @@
 7. [Higher Order Functions](classes/Class-07.slides.html)
 8. [Inheritance](classes/Class-08.slides.html)
 9. [Introduction to Java](classes/Class-09.slides.html)
-10. [Java](classes/Class-10.slides.html)
+10. [Java Part II](classes/Class-10.slides.html)
 
 ### Trabajos Prácticos
 
