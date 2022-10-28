@@ -11,12 +11,8 @@
 6. [Sistemas de Numeración](classes/Class-06.slides.html)
 7. [Higher Order Functions](classes/Class-07.slides.html)
 8. [Inheritance](classes/Class-08.slides.html)
-<<<<<<< HEAD
-9. [Java](classes/Class-09.slides.html)
-=======
 9. [Introduction to Java](classes/Class-09.slides.html)
 10. [Java](classes/Class-10.slides.html)
->>>>>>> 141de2d (Add Class 10, fix class 8)
 
 ### Trabajos Prácticos
 
