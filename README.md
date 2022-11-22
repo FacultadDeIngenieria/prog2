@@ -47,6 +47,9 @@
 
 - [Simple Exercises](exercises/simple_exercises.md)   
 	
+### Ejercicios de Parciales resueltos
+
+- [Segundo Parcial](exams/prog2-parcial2.zip)
 
 ### Calendario
 #### Comisión 1 (Lunes 9 a 13)
