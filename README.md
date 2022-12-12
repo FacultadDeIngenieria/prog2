@@ -46,50 +46,6 @@
 ### Ejercicios Práctica
 
 - [Simple Exercises](exercises/simple_exercises.md)   
-	
-### Ejercicios de Parciales resueltos
-
-- [Segundo Parcial](exams/prog2-parcial2.zip)
-
-### Calendario
-#### Comisión 1 (Lunes 9 a 13)
-
-1. 1 Agosto
-2. 8 Agosto
-3. 22 Agosto 
-4. 29 Agosto 
-5. 5 Septiembre 
-6. 12 Septiembre 
-7. 19 Septiembre (Primer Parcial)
-8. 26 Septiembre 
-9. 3 Octubre 
-10. 10 Octubre <-- Feriado
-11. 17 Octubre 
-12. 24 Octubre
-13. 31 Octubre 
-14. 7 Noviembre
-15. 14 Noviembre (Segundo Parcial)
-
-#### Comisión 2 (Viernes 9 a 13)
-
-1. 5 Agosto
-2. 12 Agosto
-3. 19 Agosto
-4. 26 Agosto
-5. 2 Septiembre
-6. 9 Septiembre
-7. 16 Septiembre  (Primer Parcial) 
-8. 23 Septiembre
-9. 30 Septiembre
-10. 14 Octubre
-11. 21 Octubre
-12. 28 Octubre
-13. 4 Noviembre 
-14. 11 Noviembre (Segundo Parcial) 
-15. 18 Noviembre 
-
-
-## Bibliografía
 
 
 
