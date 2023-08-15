@@ -11,7 +11,7 @@
 
 ### Trabajos Prácticos
 0. [TP1](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp1)
-
+1. [TP2](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp2)
 
 
 
