@@ -9,6 +9,7 @@
 3. [Types 2](https://facultaddeingenieria.github.io/prog2/classes/Class-03-types-continuation.slides.html)
 4. [Sets & Dictionaries](https://facultaddeingenieria.github.io/prog2/classes/Class-04-set-dictionaries.slides.html)
 5. [TDD](https://facultaddeingenieria.github.io/prog2/classes/Class-05-TDD.html)
+5. [OOP](https://facultaddeingenieria.github.io/prog2/classes/Class-06-OOP.html)
 
 ### Trabajos Prácticos
 0. [TP1](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp1)
