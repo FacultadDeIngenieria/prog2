@@ -18,7 +18,7 @@
    - [TP3 - Instructions](exercises/tp3/.docs/instructions.md)
 4. [TP4](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp4)
 5. [TP5](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp5)
-6. [TP6](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp6)
+<!--- 6. [TP6](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp6) --->
 
 
 
