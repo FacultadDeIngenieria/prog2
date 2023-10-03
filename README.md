@@ -22,6 +22,7 @@
 7. [TP7](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp7)
    - [TP7 - Instructions](exercises/tp7/README.md)
 
-
+### Ejercicios complementarios
+0. - [Ejercicios sueltos python](exercises/simple_exercises.md)
 
 
