@@ -26,7 +26,7 @@
    - [TP8 - Instructions](exercises/tp8/README.md)
 9. [TP9](https://github.com/FacultadDeIngenieria/prog2-exercises-standalone/tree/main/exercises/practice/tp-7-sum-of-multiples)
    - [TP9 - Instuctions](exercises/tp9/README.md)
-
+10. [TP10](exercises/tp10/README.md)
 ### Ejercicios complementarios
 0. - [Ejercicios sueltos python](exercises/simple_exercises.md)
 

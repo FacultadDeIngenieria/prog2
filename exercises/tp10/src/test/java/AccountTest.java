@@ -1,4 +1,13 @@
+package src.test.java;
+
 import org.junit.jupiter.api.Test;
+import src.main.java.Account;
+import src.main.java.Owner;
+import src.main.java.Transaction;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AccountTest {
@@ -6,11 +15,6 @@ public class AccountTest {
     Owner moe = new Owner(1, "Moe");
     Owner larry = new Owner(2, "Larry");
     Owner curly = new Owner(10, "Curly");
-
-    @Test
-    public void testCreationOwner() {
-        assertEquals("Moe", moe.getName());
-    }
 
     @Test
     public void testCreationAccount() {
