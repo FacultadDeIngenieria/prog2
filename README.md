@@ -10,7 +10,9 @@
 4. [Sets & Dictionaries](https://facultaddeingenieria.github.io/prog2/classes/Class-04-set-dictionaries.slides.html)
 5. [TDD](https://facultaddeingenieria.github.io/prog2/classes/Class-05-TDD.html)
 5. [OOP](https://facultaddeingenieria.github.io/prog2/classes/Class-06-OOP.slides.html)
-6  [Numeral Systems](https://facultaddeingenieria.github.io/prog2/classes/Class-07-numerical-systems.html)
+6. [Numeral Systems](https://facultaddeingenieria.github.io/prog2/classes/Class-07-numerical-systems.html)
+7. [HOF](https://facultaddeingenieria.github.io/prog2/classes/Class-09.HOF.html)
+8. [JAVA 1](https://facultaddeingenieria.github.io/prog2/classes/Class-11.java1.html)
 
 ### Trabajos Prácticos
 0. [TP1](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp1)
