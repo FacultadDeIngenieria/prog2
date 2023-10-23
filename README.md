@@ -13,6 +13,7 @@
 6. [Numeral Systems](https://facultaddeingenieria.github.io/prog2/classes/Class-07-numerical-systems.html)
 7. [HOF](https://facultaddeingenieria.github.io/prog2/classes/Class-09.HOF.html)
 8. [JAVA 1](https://facultaddeingenieria.github.io/prog2/classes/Class-11.java1.html)
+9. [JAVA 2](https://facultaddeingenieria.github.io/prog2/classes/Class-12.slides.html)
 
 ### Trabajos Prácticos
 0. [TP1](https://github.com/FacultadDeIngenieria/prog2/blob/main/exercises/tp1)
