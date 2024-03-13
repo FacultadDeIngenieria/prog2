@@ -12,5 +12,8 @@
 ### Temas Práctica:
 0. [Reviewing Concepts](Practice-000-Reviewing-Concepts.slides.html)
 
+### Ejercicios
+0. [Reviewing Concepts](Exercises-Reviewing-Concepts.html)
+
 ### Trabajos Prácticos
 ## In short

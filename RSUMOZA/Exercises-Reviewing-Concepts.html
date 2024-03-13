@@ -1,0 +1,136 @@
+<html>
+<meta charset="utf-8" />
+<body>
+<h1 id="ejercicios-introductorios-java">Ejercicios Introductorios Java</h1>
+<p>Se puede utilizar una única clase para crear todas estas funciones. (utilizar una función main donde se ejecuten y verifique que funcionen correctamente).</p>
+<p>También, pueden utilizar funciones matemáticas disponibles en la clase <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html">Math</a> y utilidades de la clase <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></p>
+<ol>
+    <li><strong>Función Suma</strong>: Escribe una función que sume dos números.</li>
+    <li><strong>Suma de Tres</strong>: Modifica la función anterior para que sume tres números.</li>
+    <li><strong>Promedio de Array</strong>: Crea una función que calcule el promedio de un array de números.</li>
+    <li><strong>Texto en Mayúsculas</strong>: Diseña una función que convierta una cadena de texto a mayúsculas.</li>
+    <li><strong>El Mayor de Tres</strong>: Implementa una función que encuentre el mayor de tres números.</li>
+    <li><strong>Suma Acumulativa</strong>: Escribe una función que sume números de 1 a N, donde N es el parámetro.</li>
+    <li><strong>Factorial</strong>: Crea una función que calcule el factorial de un número. (secuencialmente con loops).</li>
+    <li><strong>Número Par o Impar</strong>: Diseña una función que determine si un número es par o impar.</li>
+    <li><strong>Cuenta Caracteres</strong>: Escribe una función que cuente el número de veces que aparece un carácter en una cadena.</li>
+    <li><strong>Tabla de Multiplicar</strong>: Implementa una función que muestre la tabla de multiplicar de un número. (hasta el 10)</li>
+    <li><strong>Conversión de Temperatura</strong>: Crea una función que convierta grados Celsius a Fahrenheit.</li>
+    <li><strong>Fibonacci</strong>: Implementa una función que retorne el enésimo número de Fibonacci. (secuencialmente con loops).</li>
+    <li><strong>Inversión de Cadena</strong>: Escribe una función que invierta una cadena de texto.</li>
+    <li><strong>Distancia Entre Dos Puntos</strong>: Escribe una función que calcule la distancia entre dos puntos en el plano cartesiano.</li>
+    <li><strong>Área de un Círculo</strong>: Crea una función que calcule el área de un círculo dado su radio.</li>
+</ol>
+
+<details>
+    <summary>
+        <h1 id="respuestas">Respuestas</h1>
+    </summary>
+    <p>Estas respuestas son una de múltiples posibles respuestas para cada ejercicio, no es necesario que lleguen exactamente a la misma solución. Si prueban la función y realiza lo que indica el enunciado es correcta. Se adjuntan las respuestas para tener una referencia de una posible forma de resolverlo en Java.</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 1. Función Suma</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">suma</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span> </span>{
+    <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-comment">// 2. Suma de Tres</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sumaDeTres</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b, <span class="hljs-keyword">int</span> c)</span> </span>{
+    <span class="hljs-keyword">return</span> a + b + c;
+}
+
+<span class="hljs-comment">// 3. Promedio de Array</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">promedio</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] numeros)</span> </span>{
+    <span class="hljs-keyword">int</span> suma = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> num : numeros) {
+        suma += num;
+    }
+    <span class="hljs-keyword">return</span> suma / (<span class="hljs-keyword">double</span>) numeros.length;
+}
+
+<span class="hljs-comment">// 4. Texto en Mayúsculas</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">aMayusculas</span><span class="hljs-params">(String texto)</span> </span>{
+    <span class="hljs-keyword">return</span> texto.toUpperCase();
+}
+
+<span class="hljs-comment">// 5. El Mayor de Tres</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">elMayorDeTres</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b, <span class="hljs-keyword">int</span> c)</span> </span>{
+    <span class="hljs-keyword">if</span> (a &gt; b &amp;&amp; a &gt; c) <span class="hljs-keyword">return</span> a;
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (b &gt; a &amp;&amp; b &gt; c) <span class="hljs-keyword">return</span> b;
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> c;
+}
+
+<span class="hljs-comment">// 6. Suma Acumulativa</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sumaAcumulativa</span><span class="hljs-params">(<span class="hljs-keyword">int</span> N)</span> </span>{
+    <span class="hljs-keyword">int</span> suma = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= N; i++) {
+        suma += i;
+    }
+    <span class="hljs-keyword">return</span> suma;
+}
+
+<span class="hljs-comment">// 7. Factorial</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">int</span> resultado = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+        resultado *= i;
+    }
+    <span class="hljs-keyword">return</span> resultado;
+}
+
+<span class="hljs-comment">// 8. Número Par o Impar</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> boolean <span class="hljs-title">esPar</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">return</span> n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// 9. Cuenta Caracteres</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">cuentaCaracteres</span><span class="hljs-params">(String texto, <span class="hljs-keyword">char</span> caracter)</span> </span>{
+    <span class="hljs-keyword">int</span> contador = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; texto.length(); i++) {
+        <span class="hljs-keyword">if</span> (texto.charAt(i) == caracter) {
+            contador++;
+        }
+    }
+    <span class="hljs-keyword">return</span> contador;
+}
+
+<span class="hljs-comment">// 10. Tabla de Multiplicar</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">tablaDeMultiplicar</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++) {
+        System.out.println(n + <span class="hljs-string">" * "</span> + i + <span class="hljs-string">" = "</span> + (n * i));
+    }
+}
+
+<span class="hljs-comment">// 11. Conversión de Temperatura</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">celsiusAFahrenheit</span><span class="hljs-params">(<span class="hljs-keyword">double</span> celsius)</span> </span>{
+    <span class="hljs-keyword">return</span> (celsius * <span class="hljs-number">9</span>/<span class="hljs-number">5</span>) + <span class="hljs-number">32</span>;
+}
+
+<span class="hljs-comment">// 12. Fibonacci Secuencial</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">fibonacciSecuencial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">if</span> (n &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> n;
+    <span class="hljs-keyword">int</span> a = <span class="hljs-number">0</span>, b = <span class="hljs-number">1</span>, c;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    <span class="hljs-keyword">return</span> b;
+}
+
+<span class="hljs-comment">// 13. Inversión de Cadena</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">invertirCadena</span><span class="hljs-params">(String cadena)</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> StringBuilder(cadena).reverse().toString();
+}
+
+<span class="hljs-comment">// 16. Distancia Entre Dos Puntos</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">distanciaEntrePuntos</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x1, <span class="hljs-keyword">double</span> y1, <span class="hljs-keyword">double</span> x2, <span class="hljs-keyword">double</span> y2)</span> </span>{
+    <span class="hljs-keyword">return</span> Math.<span class="hljs-built_in">sqrt</span>(Math.<span class="hljs-built_in">pow</span>(x2 - x1, <span class="hljs-number">2</span>) + Math.<span class="hljs-built_in">pow</span>(y2 - y1, <span class="hljs-number">2</span>));
+}
+
+<span class="hljs-comment">// 17. Área de un Círculo</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">areaCirculo</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radio)</span> </span>{
+    <span class="hljs-keyword">return</span> Math.PI * Math.<span class="hljs-built_in">pow</span>(radio, <span class="hljs-number">2</span>);
+}
+</code></pre>
+</details>
+</body>
+</html>
