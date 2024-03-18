@@ -16,4 +16,4 @@
 0. [Reviewing Concepts](Exercises-Reviewing-Concepts.html)
 
 ### Trabajos Prácticos
-## In short
+0. [TP 1 - Quadratic & Cars](Practice-001-Quadratic.html)
