@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #0366d6;
+        }
+        code {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            font-family: monospace;
+            padding: 2px 4px;
+        }
+        p, li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Quadratic</h1>
+<p>You have to solve a Second grade equation of the form <strong>ax<sup>2</sup> + bx + c</strong>.</p>
+<p>For this create a class named Quadratic (in a new file) that get created from 3 Float numbers, each representing the coefficients a, b, and c.</p>
+<p>This class have all this behaviour:</p>
+<ul>
+    <li><code>roots</code> returns a list of numbers that represents the (x<sub>1</sub> and x<sub>2</sub>).
+        <ul>
+            <li>If the equation has only one real solution then it should return one root.</li>
+            <li>If the equation has no real solutions then return an empty List.</li>
+        </ul>
+    </li>
+    <li><code>toString</code> should return a String representing the Quadratic as a String the form <code>Y = A * X2 + B * X + C</code></li>
+    <li><code>derivation</code> should return a String representing the derivative of the Quadratic function.</li>
+</ul>
+
+<p>None of these methods receive any parameters, they should use the classes variables for their calculations and output.</p>
+
+<h2>Examples</h2>
+<p>To test your code, you can create a new class called QuadraticTest in a new file and test if the Quadratic methods work correctly, inside a main method.</p>
+<pre><code>Quadratic q = new Quadratic(1,-5,6)
+q.roots() should return [2,3]
+q.toString() should return 1 * x^2 - 5 * x + 6
+q.derivation() should return 2 * x - 5</code></pre>
+
+<h1>Cars</h1>
+
+<p>You have to model a car. A car in our system is defined by the following data:
+<ul>
+    <li>Brand</li>
+    <li>Model</li>
+    <li>Year of production</li>
+    <li>Kilometers Driven</li>
+</ul>
+
+<p>Whenever a new Car gets created, it always starts with 0 kilometers</p>
+<p>Also, the Car should be able to perform the following operations:
+<ul>
+    <li>
+        <code>getDescriptiveName</code> returns a String in upper camel case that indicates the year of production, brand and model of the car, e.g: "2019 Audi A4".
+    </li>
+    <li>
+        <code>readOdometer</code> returns a String that describes the kilometers driven, e.g: "This car has 23 kilometers on it"
+    </li>
+    <li>
+        <code>updateOdometer</code> receives a number representing the new amount of kilometers driven, this changes the current value that the Car has, only if this value is higher than the previous one.
+    </li>
+    <li>
+        <code>incrementOdometer</code> receives a number representing an amount in kilometers, this amount gets added to the current kilometers driven value of the Car.
+    </li>
+</ul>
+</body>
+</html>

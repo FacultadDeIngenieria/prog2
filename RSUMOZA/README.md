@@ -9,5 +9,11 @@
 4. [JAVA 1](TO DO)
 5. [JAVA 2](TO DO)
 
+### Temas Práctica:
+0. [Reviewing Concepts](Practice-000-Reviewing-Concepts.slides.html)
+
+### Ejercicios
+0. [Reviewing Concepts](Exercises-Reviewing-Concepts.html)
+
 ### Trabajos Prácticos
-## In short
+0. [TP 1 - Quadratic & Cars](Practice-001-Quadratic.html)
