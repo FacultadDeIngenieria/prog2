@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-<h1>Quadratic</h1>
+<h1>1. Quadratic</h1>
 <p>You have to solve a Second grade equation of the form <strong>ax<sup>2</sup> + bx + c</strong>.</p>
 <p>For this create a class named Quadratic (in a new file) that get created from 3 Float numbers, each representing the coefficients a, b, and c.</p>
 <p>This class have all this behaviour:</p>
@@ -42,12 +42,14 @@
 
 <h2>Examples</h2>
 <p>To test your code, you can create a new class called QuadraticTest in a new file and test if the Quadratic methods work correctly, inside a main method.</p>
-<pre><code>Quadratic q = new Quadratic(1,-5,6)
+<pre><code>
+    Quadratic q = new Quadratic(1,-5,6);
 q.roots() should return [2,3]
 q.toString() should return 1 * x^2 - 5 * x + 6
-q.derivation() should return 2 * x - 5</code></pre>
+q.derivation() should return 2 * x - 5
+</code></pre>
 
-<h1>Cars</h1>
+<h1>2. Cars</h1>
 
 <p>You have to model a car. A car in our system is defined by the following data:
 <ul>
@@ -73,5 +75,143 @@ q.derivation() should return 2 * x - 5</code></pre>
         <code>incrementOdometer</code> receives a number representing an amount in kilometers, this amount gets added to the current kilometers driven value of the Car.
     </li>
 </ul>
+
+<h1>3. Time</h1>
+<p>Create a class named Time with attributes for hours, minutes, and seconds. It should include:</p>
+<ul>
+    <li>Getters and setters for each attribute individually and all three together.</li>
+    <li>A method <code>nextSecond()</code> that increments the time by one second and returns a new Time object.</li>
+    <li>A method <code>previousSecond()</code> that decrements the time by one second and returns a new Time object.</li>
+    <li>A <code>toString()</code> method that returns the time in HH:MM:SS format.</li>
+</ul>
+
+<h2>Time Class Usage Example</h2>
+<pre><code>Time time = new Time();
+time.setHours(23);
+time.setMinutes(59);
+time.setSeconds(59);
+System.out.println(time); // Output: 23:59:59
+
+Time nextTime = time.nextSecond();
+System.out.println(nextTime); // Output: 00:00:00
+
+Time previousTime = nextTime.previousSecond();
+System.out.println(previousTime); // Output: 23:59:59</code></pre>
+    
+<h1>4. Rectangle</h1>
+<p>Define a Rectangle class with attributes for length and width. It should include:</p>
+<ul>
+    <li>Getters and setters for length and width.</li>
+    <li>A method to calculate the area of the rectangle.</li>
+    <li>A method to calculate the perimeter of the rectangle.</li>
+    <li>A <code>toString()</code> method that returns a string representation of the rectangle.</li>
+</ul>
+<h2>Rectangle Class Usage Example</h2>
+<pre><code>Rectangle rectangle = new Rectangle();
+rectangle.setLength(5);
+rectangle.setWidth(4);
+System.out.println(rectangle); // Output: Rectangle[length=5,width=4]
+System.out.println("Area: " + rectangle.getArea()); // Output: Area: 20
+System.out.println("Perimeter: " + rectangle.getPerimeter()); // Output: Perimeter: 18</code></pre>
+
+<h1>5. InvoiceItem</h1>
+<p>Create a class named InvoiceItem with attributes for id, description, quantity, and unit price. It should include:</p>
+<ul>
+    <li>Getters and setters for each attribute.</li>
+    <li>A method <code>getTotal()</code> that calculates the total cost as quantity times unit price.</li>
+</ul>
+<h2>InvoiceItem Class Usage Example</h2>
+<pre><code>InvoiceItem item = new InvoiceItem("123", "USB Cable", 2, 5.50);
+System.out.println(item); // Output: InvoiceItem[id=123,description=USB Cable,quantity=2,unitPrice=5.50]
+System.out.println("Total cost: " + item.getTotal()); // Output: Total cost: 11.0</code></pre>
+
+<h1>6. Employee</h1>
+<p>Model an Employee class with attributes for id, firstname, lastname, and salary. It should include:</p>
+<ul>
+    <li>Getters and setters for each attribute.</li>
+    <li>A method to return the full name of the employee.</li>
+    <li>A method to return the annual salary.</li>
+    <li>A method to give a raise to the employee by a certain percentage.</li>
+    <li>A <code>toString()</code> method that returns a string representation of the employee.</li>
+</ul>
+<h2>Employee Class Usage Example</h2>
+<pre><code>Employee employee = new Employee("001", "John", "Doe", 50000);
+System.out.println(employee); // Output: Employee[id=001,firstName=John,lastName=Doe,salary=50000]
+System.out.println("Annual Salary: " + employee.getAnnualSalary()); // Output: Annual Salary: 600000
+employee.raiseSalary(10);
+System.out.println("Salary after raise: " + employee.getSalary()); // Output: Salary after raise: 55000</code></pre>
+
+<h1>7. Date</h1>
+<p>Design a Date class with day, month, and year attributes. It should include:</p>
+<ul>
+    <li>Getters and setters for each attribute.</li>
+    <li>A <code>toString()</code> method that returns the date in DD/MM/YYYY format.</li>
+</ul>
+<h2>Date Class Usage Example</h2>
+<pre><code>Date date = new Date(24, 3, 2024);
+System.out.println(date); // Output: 24/03/2024</code></pre>
+
+<h1>8. Circle</h1>
+<p>Create a Circle class with a radius attribute. It should include:</p>
+<ul>
+    <li>Getters and setters for the radius.</li>
+    <li>A method to calculate the area of the circle.</li>
+    <li>A method to calculate the circumference of the circle.</li>
+    <li>A <code>toString()</code> method that returns a string representation of the circle.</li>
+</ul>
+<h2>Circle Class Usage Example</h2>
+<pre><code>Circle circle = new Circle(5.0);
+System.out.println(circle); // Output: Circle[radius=5.0]
+System.out.println("Area: " + circle.getArea()); // Output: Area: 78.53981633974483
+System.out.println("Circumference: " + circle.getCircumference()); // Output: Circumference: 31.41592653589793</code></pre>
+
+<h1>9. Ball</h1>
+<p>Develop a Ball class that simulates bouncing within a 2D Box. It should include:</p>
+<ul>
+    <li>Attributes for the ball's position (x, y), radius, and deltas (xDelta, yDelta).</li>
+    <li>A method to move the ball based on its current position and deltas.</li>
+    <li>Methods to change the direction of the ball horizontally and vertically (to simulate bouncing).</li>
+    <li>A <code>toString()</code> method that shows the current state of the ball.</li>
+    <li>In a main method, try bouncing the ball within defined box boundaries.</li>
+</ul>
+<h2>Ball Class Usage Example</h2>
+<pre><code>Ball ball = new Ball(50, 50, 5, 10, 10);
+System.out.println(ball); // Initial state
+// Simulate the ball movement
+for (int i = 0; i &lt; 5; i++) {
+    ball.move();
+    System.out.println(ball);
+    // Assume conditions for bouncing off walls
+    if (ball.getX() + ball.getXDelta() &gt; 100 || ball.getX() + ball.getXDelta() &lt; 0) {
+        ball.reflectHorizontal();
+    }
+    if (ball.getY() + ball.getYDelta() &gt; 100 || ball.getY() + ball.getYDelta() &lt; 0) {
+        ball.reflectVertical();
+    }
+}</code></pre>
+
+<h1>10. Account</h1>
+<p>Model an Account class with id, name, and balance attributes. It should include:</p>
+<ul>
+    <li>Getters and setters for each attribute.</li>
+    <li>A method to credit (add) an amount to the account.</li>
+    <li>A method to debit (subtract) an amount from the account, with a check to ensure the balance is sufficient (if it is not, print a console message alerting this and do nothing).</li>
+    <li>A method to transfer an amount from the account into another Account, with a check to ensure the balance is sufficient (if it is not, print a console message alerting this and do nothing).</li>
+</ul>
+    <h2>Account Class Usage Example</h2>
+<pre><code>Account account = new Account("001", "John Doe", 1000.0);
+System.out.println(account); // Output: Account[id=001,name=John Doe,balance=1000.0]
+
+account.credit(500);
+System.out.println("Balance after credit: " + account.getBalance()); // Output: Balance after credit: 1500.0
+
+account.debit(200);
+System.out.println("Balance after debit: " + account.getBalance()); // Output: Balance after debit: 1300.0
+
+Account anotherAccount = new Account("002", "Jane Doe", 300.0);
+account.transferTo(anotherAccount, 300);
+System.out.println("Balance after transfer: " + account.getBalance()); // Output: Balance after transfer: 1000.0
+System.out.println("Another account balance: " + anotherAccount.getBalance()); // Output: Another account balance: 600.0</code></pre>
+
 </body>
 </html>
