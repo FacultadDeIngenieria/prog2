@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+# Setup
+title:    Prog 2
+tagline:  Introdución a la Programación II
+baseurl:  /prog2
+zip:	    https://github.com/FacultadDeIngenieria/prog2/zipball/gh-pages
+
+# About/contact
+author:
+name:       Introdución a la Programación II
