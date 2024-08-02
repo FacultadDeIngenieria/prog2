@@ -1,5 +1,5 @@
 ---
-title: Java and Pythoninstallation
+title: Java and Python installation
 layout: utils
 permalink: /utils/installation
 ---
