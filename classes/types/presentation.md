@@ -183,7 +183,7 @@ List<Boolean> myVariable = Arrays.asList(true, false, true);
 # Interpreter vs Compiler
 
 
-![Interpreter vs Compiler](diff-compiler.jpeg)
+![Interpreter vs Compiler]({{site.baseurl}}/classes/types/diff-compiler.jpeg)
 
 ---
 
