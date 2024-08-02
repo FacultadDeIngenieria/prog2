@@ -227,7 +227,7 @@ myVariable.toString();
 
 **Null Pointer Exception**
 
-![Interpreter vs Compiler]({{site.baseurl}}/classes/types/diff-compiler.jpeg)
+![Interpreter vs Compiler]({{site.baseurl}}/classes/types/null-pointer.jpg)
 
 ---
 
