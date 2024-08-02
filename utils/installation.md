@@ -5,6 +5,41 @@ permalink: /utils/installation
 ---
 # Java Installation
 
+## Crear y Ejecutar un Programa Simple "Hello World"
+
+1. **Crear un archivo Java**:
+   - Abre un editor de texto y escribe el siguiente código:
+     ```java
+     public class HelloWorld {
+         public static void main(String[] args) {
+             System.out.println("Hello, World!");
+         }
+     }
+     ```
+   - Guarda el archivo como `HelloWorld.java`.
+
+2. **Compilar el archivo Java**:
+   - Abre una terminal y navega al directorio donde guardaste `HelloWorld.java`.
+   - Compila el archivo:
+     ```sh
+     javac HelloWorld.java
+     ```
+
+3. **Ejecutar el programa compilado**:
+   - Ejecuta el programa:
+     ```sh
+     java HelloWorld
+     ```
+
+Deberías ver la salida:
+
+```Hello, World!```
+
+Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
+
+--- 
+
+
 ## Java on Mac OS X
 
 1. **Descargar el JDK**:
@@ -72,7 +107,7 @@ permalink: /utils/installation
 ### Paso 1: Descargar e Instalar Java 22
 
 1. **Descargar el JDK**:
-    - Ve a la [página de descarga de Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk22-downloads.html) o una fuente alternativa como [AdoptOpenJDK](https://adoptopenjdk.net/).
+    - Ve a la página [AdoptOpenJDK](https://adoptopenjdk.net/).
     - Descarga el tarball (`.tar.gz`) para Linux.
 
 2. **Instalar el JDK**:
@@ -112,40 +147,6 @@ permalink: /utils/installation
 
 
 ---
-Crear y Ejecutar un Programa Simple "Hello World"
-
-1. **Crear un archivo Java**:
-    - Abre un editor de texto y escribe el siguiente código:
-      ```java
-      public class HelloWorld {
-          public static void main(String[] args) {
-              System.out.println("Hello, World!");
-          }
-      }
-      ```
-    - Guarda el archivo como `HelloWorld.java`.
-
-2. **Compilar el archivo Java**:
-    - Abre una terminal y navega al directorio donde guardaste `HelloWorld.java`.
-    - Compila el archivo:
-      ```sh
-      javac HelloWorld.java
-      ```
-
-3. **Ejecutar el programa compilado**:
-    - Ejecuta el programa:
-      ```sh
-      java HelloWorld
-      ```
-
-Deberías ver la salida:
-
-```Hello, World!```
-
-Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
-
-
---- 
 # Python Installation
 
 ## Python on OS X
