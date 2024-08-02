@@ -8,11 +8,11 @@ permalink: /utils/installation
 ## Java on Mac OS X
 
 1. **Descargar el JDK**:
-    - Ve a la [página de descarga de Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk22-downloads.html) o una fuente alternativa como [AdoptOpenJDK](https://adoptopenjdk.net/).
+    - Ve a la página [AdoptOpenJDK](https://adoptopenjdk.net/).
     - Descarga el instalador para macOS.
 
 2. **Instalar el JDK**:
-    - Abre el archivo `.dmg` descargado y sigue las instrucciones de instalación.
+    - Abre el archivo `.dmg` o `.pkg` descargado y sigue las instrucciones de instalación.
 
 3. **Configurar el entorno**:
     - Abre una terminal.
