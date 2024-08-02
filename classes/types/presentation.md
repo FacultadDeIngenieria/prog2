@@ -180,6 +180,57 @@ List<Boolean> myVariable = Arrays.asList(true, false, true);
 
 ---
 
+# Null
+
+How do we represent the absence of a value?
+
+---
+
+# Null
+## Python
+
+```python
+my_variable = None
+print(print(1))
+
+def my_function():
+    a = 1
+
+print(my_function())
+```
+
+---
+
+# Null
+## Java
+
+```java
+// null
+Integer myVariable = null;
+System.out.println(myVariable);
+```
+---
+
+# Null
+## Java
+
+```java
+// null
+Integer myVariable = null;
+myVariable.toString();
+// Exception in thread "main" java.lang.NullPointerException
+```
+
+---
+# Null
+## Java
+
+**Null Pointer Exception**
+
+![Interpreter vs Compiler]({{site.baseurl}}/classes/types/diff-compiler.jpeg)
+
+---
+
 # Interpreter vs Compiler
 
 
