@@ -43,6 +43,10 @@ Examples of Java collections
             System.out.println(element);
         }
         
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+        
         int i = 0;
         while (i < list.size()) {
             System.out.println(list.get(i));
@@ -69,6 +73,10 @@ Examples of Java collections
         
         for (String element : set) {
             System.out.println(element);
+        }
+        
+        for (int i = 0; i < set.size(); i++) {
+            System.out.println(set.get(i));
         }
         
         int i = 0;
