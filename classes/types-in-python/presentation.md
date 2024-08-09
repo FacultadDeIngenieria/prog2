@@ -59,7 +59,7 @@ my_variable: bool = False
 
 ```python
 # list
-import List from typing
+from typing import List
 my_variable: List[int] = [1, 2, 3]
 my_variable: List[int] = ["Hello", "World"]
 ```
@@ -73,7 +73,7 @@ my_variable: List[int] = ["Hello", "World"]
 
 ```python
 # tuple
-import Tuple from typing
+from typing import Tuple
 my_variable: Tuple[int, str] = (1, "Hello")
 my_variable: Tuple[int, str] = (1, 2)
 ```
@@ -86,7 +86,7 @@ my_variable: Tuple[int, str] = (1, 2)
 
 ```python
 # dict
-import Dict from typing
+from typing import Dict
 my_variable: Dict[str, int] = {"key": 1}
 my_variable: Dict[int, str] = {1: "key"}
 ```
@@ -99,7 +99,7 @@ my_variable: Dict[int, str] = {1: "key"}
 
 ```python
 # set
-import Set from typing
+from typing import Set
 my_variable: Set[int] = {1, 2, 3}
 my_variable: Set[str] = {"Hello", "World"}
 ```
