@@ -26,7 +26,19 @@ Examples of Java collections
         System.out.println(list.reversed());
         System.out.println(list.indexOf("Hello"));
         System.out.println(list.isEmpty());
+        ...
         
+```
+
+---
+
+# Java Collections
+
+## List
+
+```java
+   {
+    ...
         for (String element : list) {
             System.out.println(element);
         }
