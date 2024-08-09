@@ -251,7 +251,7 @@ code (bytecode). i.e.: Java or C#
 
 # Interpreter vs Compiler
 
-Example: Python
+ExampleList: Python
 
 ```python
 # my_script.py
@@ -267,7 +267,7 @@ $ python my_script.py
 
 # Interpreter vs Compiler
 
-Example: Java
+ExampleList: Java
 
 ```java
 // HelloWorld.java

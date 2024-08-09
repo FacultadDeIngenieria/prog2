@@ -1,0 +1,2 @@
+javac ExampleList.java
+java ExampleList
