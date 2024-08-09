@@ -8,3 +8,9 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 
 ## Prácticas
 1. [Instalación de Java y Python](utils/installation)
+
+
+## Trabajos Prácticos
+
+1. [Quadratic](exercises/tp1/1.0.eq-snd-grade.md)
+2. [Cars](exercises/tp1/1.1/cars.md)
