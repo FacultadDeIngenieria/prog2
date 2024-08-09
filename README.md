@@ -12,5 +12,4 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 
 ## Trabajos Prácticos
 
-1. [Quadratic](exercises/tp1/1.0.eq-snd-grade.md)
-2. [Cars](exercises/tp1/1.1/cars.md)
+1. TP1 [Quadratic](exercises/tp1/1.0.eq-snd-grade.md) [Cars](exercises/tp1/1.1/cars.md)
