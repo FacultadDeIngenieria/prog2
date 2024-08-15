@@ -7,10 +7,10 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 4. [Java Collections](java-collections)
 5. [TDD](tdd)
 
-## Prácticas
-1. [Instalación de Java y Python](utils/installation)
-
-
 ## Trabajos Prácticos
 
-1. TP1 [Quadratic](exercises/tp1/1.0.eq-snd-grade.md) [Cars](exercises/tp1/1.1.cars.md)
+1. [TP1](practice/1)
+1. [TP2](practice/2)
+
+## Recursos
+1. [Instalación de Java y Python](utils/installation)
