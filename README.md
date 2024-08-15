@@ -8,9 +8,14 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 5. [TDD](tdd)
 
 ## Trabajos Prácticos
-
 1. [TP1](practice/1)
-1. [TP2](practice/2)
+2. [TP2](practice/2)
 
 ## Recursos
 1. [Instalación de Java y Python](utils/installation)
+
+## Ejercicios adicionales
+1. Objetos:
+   1. [Quadratic](additional-practice/1.1)
+   2. [Cars](additional-practice/1.2) 
+
