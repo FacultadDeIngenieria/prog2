@@ -80,7 +80,7 @@ El año 2001 no es bisiesto
 ```
 
 # Trabajo Práctico 2 - Ejercicio 2 - Java Collections
-[Ejercicio 2](https://classroom.github.com/a/O7JasqRO)
+[Ejercicio 2 Fixed](https://classroom.github.com/a/D8FP7CVi)
 
 ## 2.1 Lists
 
