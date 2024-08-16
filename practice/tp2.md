@@ -80,7 +80,7 @@ El año 2001 no es bisiesto
 ```
 
 # Trabajo Práctico 2 - Ejercicio 2 - Java Collections
-[Ejercicio 2](TODO)
+[Ejercicio 2](https://classroom.github.com/a/O7JasqRO)
 
 ## 2.1 Lists
 
@@ -178,7 +178,7 @@ Tendrás que gestionar la adición de artículos a un inventario. Cada vez que u
 
 Para finalizar, tendrás que implementar una función que devuelva todos los pares clave-valor en un inventario como una lista de `tuplas`.
 
-### 1. Crear un inventario basado en una lista
+### 2.3.1. Crear un inventario basado en una lista
 
 Implementa la función `create_inventory` que crea un "inventario" a partir de una lista de artículos. Debe devolver un `dict` que contenga cada nombre de artículo emparejado con su cantidad respectiva.
 
@@ -187,7 +187,7 @@ Implementa la función `create_inventory` que crea un "inventario" a partir de u
 {"coal":1, "wood":2, "diamond":3}
 ```
 
-### 2. Añadir artículos a partir de una lista a un diccionario existente
+### 2.3.2. Añadir artículos a partir de una lista a un diccionario existente
 
 Implementa la función `add_items` que agrega una lista de artículos a un inventario:
 
@@ -196,7 +196,7 @@ Implementa la función `add_items` que agrega una lista de artículos a un inven
 {"coal":2, "wood":2, "iron":1}
 ```
 
-### 3. Decrementar artículos del inventario
+### 2.3.3. Decrementar artículos del inventario
 
 Implementa la función `decrement_items` que toma una `lista` de artículos. La función debe restar uno de la cantidad disponible en el inventario por cada vez que un artículo aparezca en la `lista`:
 
@@ -211,7 +211,7 @@ Las cantidades de los artículos en el inventario no deben caer por debajo de 0.
 {"coal":0, "wood":0, "diamond":1}
 ```
 
-### 4. Eliminar por completo un artículo del inventario
+### 2.3.4. Eliminar por completo un artículo del inventario
 
 Implementa la función `remove_item` que elimina un artículo y su cantidad completamente de un inventario:
 
@@ -225,7 +225,7 @@ Si el artículo no se encuentra en el inventario, la función debe devolver el i
 {"coal":2, "wood":1, "diamond":2}
 ```
 
-### 5. Devolver el contenido del inventario
+### 2.3.5. Devolver el contenido del inventario
 
 Implementa la función `list_inventory` que toma un inventario y devuelve una lista de tuplas `(artículo, cantidad)`. La lista solo debe incluir los artículos disponibles (con una cantidad mayor a cero):
 
@@ -233,7 +233,6 @@ Implementa la función `list_inventory` que toma un inventario y devuelve una li
 >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7, "silver":0})
 [('coal', 7), ('diamond', 2), ('iron', 7), ('wood', 11)]
 ```
-
 
 # Trabajo Práctico 2 - Ejercicio 3 - TDD
 [Ejercicio 3](https://classroom.github.com/a/1ji7O5N6)
