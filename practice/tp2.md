@@ -235,7 +235,7 @@ Implementa la función `list_inventory` que toma un inventario y devuelve una li
 ```
 
 # Trabajo Práctico 2 - Ejercicio 3 - TDD
-[Ejercicio 3](https://classroom.github.com/a/1ji7O5N6)
+[Ejercicio 3 - fixed](https://classroom.github.com/a/INbuKXvT)
 
 Desarrollar un sistema de gestion de cuentas bancarias,
 en Java y siguiendo las practicas de TDD.
