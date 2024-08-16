@@ -7,4 +7,4 @@ permalink: /practice/1
 # Trabajo Práctico 1
 
 ## Completar el trabajo práctico en GitHub Classroom
-[TODO](TODO)
+[TP 1](https://classroom.github.com/a/7hUedGfb)
