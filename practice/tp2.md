@@ -9,7 +9,7 @@ permalink: /practice/2
 ## Completar el trabajo práctico en GitHub Classroom
 
 # Trabajo Práctico 2 - Ejercicio 1 - MyPy
-[Ejercicio 1](https://classroom.github.com/a/Z3DLfOeP)
+[Ejercicio 1](https://classroom.github.com/a/4bUQA757)
 
 ## 1.1 maximums.py
 
