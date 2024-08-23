@@ -6,6 +6,7 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 3. [Types in python](types-in-python)
 4. [Java Collections](java-collections)
 5. [TDD](tdd)
+5. [Recursion](recursion)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)
