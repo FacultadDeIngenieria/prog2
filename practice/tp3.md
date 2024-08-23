@@ -1,3 +1,9 @@
+---
+title: Trabajo Práctico 3
+layout: practice
+permalink: /practice/3
+---
+
 # TP3
 
 [github](https://classroom.github.com/a/3vHTo3t4)
