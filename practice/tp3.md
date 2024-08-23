@@ -6,7 +6,9 @@ permalink: /practice/3
 
 # TP3
 
-[github](https://classroom.github.com/a/3vHTo3t4)
+[github - python](https://classroom.github.com/a/3vHTo3t4)
+[github - java](https://classroom.github.com/a/3vHTo3t4)
+
 
 ---
 title: Práctica 9
