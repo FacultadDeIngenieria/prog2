@@ -7,16 +7,9 @@ permalink: /practice/3
 # TP3
 
 [github - python](https://classroom.github.com/a/3vHTo3t4)
-[github - java](https://classroom.github.com/a/3vHTo3t4)
+[github - java](https://classroom.github.com/a/mmhDv-79)
 
-
----
-title: Práctica 9
-layout: practice
-permalink: /practice/9
----
-
-# Trabajo Práctico 9
+# Trabajo Práctico 3 - Java and Python
 
 Dado la siguiente consigna, implementar las siguientes funciones TODAS USANDO RECURSIVIDAD (Eso significa, sin usar for o while):
 
