@@ -7,6 +7,7 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 4. [Java Collections](java-collections)
 5. [TDD](tdd)
 5. [Recursion](recursion)
+6. [Object-Oriented Programming (OOP)](oop)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)
