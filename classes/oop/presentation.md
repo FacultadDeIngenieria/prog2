@@ -7,12 +7,16 @@ class: center, middle, inverse
 ## Agenda
 
 1. What is Object-Oriented Programming?
+
 2. History
+   
 3. Classes in Python
+
 4. Classes in Java
-5. Characteristics
-6. Principles
-7. Conclusion
+
+5. Principles
+
+6. Conclusion
 
 ---
 
@@ -67,8 +71,11 @@ class Person:
         return f"Hello, my name is {self.name} and I am {self.age} years old."
 ```
 
-In Python, the **__init__** method is a special method used for initializing a new instance of a class.
+In Python, the **__ init __** method is a special method used for initializing a new instance of a class.
 It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.
+
+Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.
+Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.
 
 ---
 
@@ -76,28 +83,29 @@ It is called constructor method, and it does not return anything. Instead, it in
 
 ```python
 # Instantiation of Person
-person1 : Person = Person(name="Alice", age=30)
+matias : Person = Person(name="Matias", age=29)
 
 # Using the greet method
-greeting : str = person1.greet()
+greeting : str = matias.greet()
 print(greeting)
 ```
 
-**person1 = Person(name="Alice", age=30)** creates a new instance of the Person class.
+**matias = Person(name="Matias", age=29)** creates a new instance of the Person class.
 
 
-**greeting = person1.greet()** calls the greet method on the **person1** instance.
+**greeting = matias.greet()** calls the greet method on the **matias** instance.
 
 
 This method returns a string with the person's name and age, which is then stored in the greeting variable.
+
 ---
 
 ## Defining Classes in Java
 
 ```java
 public class Person {
-    private String name;
-    private int age;
+    String name;
+    int age;
 
     public Person(String name, int age) {
         this.name = name;
@@ -110,37 +118,11 @@ public class Person {
 }
 ```
 
-**private String name;**: This line declares a private instance variable name of type String. The **private** keyword restricts access to this variable from outside the class.
-
-**private int age;**: Similarly, this line declares a private instance variable age of type int.
+**String name;**: and **int age;** declares two instance variables, name of type String and age of type int.
 
 **public Person(String name, int age)**: This is the constructor of the Person class. It has the same name as the class and is used to initialize new objects of that class.
 
----
-
-## Defining Classes in Java
-
-```java
-public class Person {
-    private String name;
-    private int age;
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String greet() {
-        return "Hello, my name is " + name + " and I am " + age + " years old.";
-    }
-}
-```
-
-
-The constructor takes two parameters: **name** (a String) and **age** (an int).
-
 Inside the constructor, **this.name = name;** assigns the value of the parameter name to the instance variable **name**.
-
 Similarly, **this.age = age;** assigns the value of the parameter age to the instance variable **age**.
 
 ---
@@ -151,233 +133,219 @@ Similarly, **this.age = age;** assigns the value of the parameter age to the ins
 public class Main {
     public static void main(String[] args) {
         // Instantiation of Person
-        Person person1 = new Person("Alice", 30);
+        Person tomas = new Person("Tomás", 18);
 
         // Using the greet method
-        String greeting = person1.greet();
+        String greeting = tomas.greet();
         System.out.println(greeting);
     }
 }
 ```
-**new Person("Alice", 30)**: This creates a new **Person** object using the constructor. The name is set to "Alice" and age is set to 30.
+**new Person("Tomás", 18)**: This creates a new **Person** object using the constructor. The name is set to "Tomás" and age is set to 18.
 
+**Person tomas**: This declares a variable **tomas** of type **Person** and assigns the newly created Person object to it.
 
-**Person person1**: This declares a variable **person1** of type **Person** and assigns the newly created Person object to it.
-
-**person1.greet()**: Calls the **greet** method on the **person1** object, which returns a greeting message.
+**tomas.greet()**: Calls the **greet** method on the **tomas** object, which returns a greeting message.
 
 ---
 
-[//]: # ()
-[//]: # (## Characteristics - Encapsulation)
 
-[//]: # ()
-[//]: # (Grouping data and methods that operate on it.)
+## Principles:
 
-[//]: # ()
-[//]: # (**Data Hiding:** Encapsulation hides the internal state of an object from the outside world.)
+   1. Inheritance
+   
+   2. Encapsulation
 
-[//]: # (Only specific methods are exposed to interact with the object's data, which helps maintain control over how the data is accessed or modified.)
+   3. Abstraction
 
-[//]: # ()
-[//]: # (**Controlled Access:** Encapsulation provides a controlled way to access and modify the object's data.)
+   4. Polymorphism
 
-[//]: # (This is typically achieved through getter and setter methods.)
+---
 
-[//]: # ()
-[//]: # (**Increased Flexibility:** By hiding implementation details, encapsulation allows the internal implementation of a class to be changed without affecting the classes that use it.)
+## Principles - Encapsulation
 
-[//]: # ()
-[//]: # (---)
+Grouping data and methods that operate on it.
 
-[//]: # ()
-[//]: # (## Characteristics - Encapsulation - Example)
+Encapsulation hides the internal state of an object from the outside world.
+Only specific methods are exposed to interact with the object's data, which helps maintain control over how the data is accessed or modified.
 
-[//]: # ()
-[//]: # (```python)
+This is typically achieved through getter and setter methods.
 
-[//]: # (class Person:)
+By hiding implementation details, encapsulation allows the internal implementation of a class to be changed without affecting the classes that use it.
 
-[//]: # (    def __init__&#40;self, name, age&#41;:)
+---
 
-[//]: # (        self.__name = name  # private attribute)
+## Principles - Encapsulation - Class Example
 
-[//]: # (        self.__age = age    # private attribute)
+```python
+class Person:
+    def __init__(self, name: str, age: int) -> None:
+        self.__name: str = name  # private attribute
+        self.__age: int = age    # private attribute
 
-[//]: # ()
-[//]: # (    # Public method to access private attribute)
+    # Public method to access private attribute
+    def get_name(self) -> str:
+        return self.__name
 
-[//]: # (    def get_name&#40;self&#41;:)
+    # Public method to modify private attribute
+    def set_name(self, name) -> None:
+        self.__name: str = name
 
-[//]: # (        return self.__name)
+    # Public method to access private attribute
+    def get_age(self) -> int:
+        return self.__age
 
-[//]: # ()
-[//]: # (    # Public method to modify private attribute)
+    # Public method to modify private attribute
+    def set_age(self, age) -> None:
+        if age > 0:
+            self.__age: int = age
+        else:
+            print("Invalid age")
+```
 
-[//]: # (    def set_name&#40;self, name&#41;:)
+---
 
-[//]: # (        self.__name = name)
+## Principles - Encapsulation - Usage Example
 
-[//]: # ()
-[//]: # (    # Public method to access private attribute)
+```python
+person: Person = Person("John Doe", 30)
+print(person.get_name())  # Access private attribute through a public method - "John Doe"
+print(person.get_age())   # Access private attribute through a public method - 30
+person.set_age(31)        # Modify private attribute through a public method -
+print(person.get_age())   # Verify the change                                - 31
+```
 
-[//]: # (    def get_age&#40;self&#41;:)
+**Private Attributes:** The attributes **__name** and **__age** are private ( in Python this is indicated by the double underscores **__** )
+This means they cannot be accessed directly from outside the class.
 
-[//]: # (        return self.__age)
+**Getter and Setter Methods:** The class provides **get_name**, **set_name**, **get_age**, and **set_age** methods to access and modify the private attributes.
+These methods ensure that the data is validated before any changes are made (e.g., age cannot be negative).
 
-[//]: # ()
-[//]: # (    # Public method to modify private attribute)
+---
 
-[//]: # (    def set_age&#40;self, age&#41;:)
+## Principles - Inheritance - Base Class
 
-[//]: # (        if age > 0:)
 
-[//]: # (            self.__age = age)
+Ability to create new classes based on existing ones.
 
-[//]: # (        else:)
+This allows a new class to inherit properties and methods from an existing class. This promotes code reuse and helps in creating a hierarchical relationship between classes.
 
-[//]: # (            print&#40;"Invalid age"&#41;)
+```python
+class Animal:
+    def __init__(self, name: str, species: str) -> None:
+        self.name: str = name
+        self.species: str = species
 
-[//]: # ()
-[//]: # (# Usage)
+    def make_sound(self) -> str:
+        return "Some generic sound"
 
-[//]: # (person = Person&#40;"John Doe", 30&#41;)
+    def describe(self) -> str:
+        return f"{self.name} is a {self.species}"
+```
+**Animal** is a Base Class that contains attributes name and species and methods like **make_sound()** and **describe()**.
+ This class provides basic functionality common to all animals.
 
-[//]: # (print&#40;person.get_name&#40;&#41;&#41;  # Access private attribute through a public method - "John Doe")
+---
 
-[//]: # (print&#40;person.get_age&#40;&#41;&#41;   # Access private attribute through a public method - 30)
+## Principles - Inheritance - Subclasses
 
-[//]: # (person.set_age&#40;31&#41;        # Modify private attribute through a public method -)
+```python
+class Dog(Animal):
+    def __init__(self, name: str, breed: str) -> None:
+        super().__init__(name, "Dog")
+        self.breed: str = breed
 
-[//]: # (print&#40;person.get_age&#40;&#41;&#41;   # Verify the change                                - 31)
+    def make_sound(self) -> str:
+        return "Woof!"
 
-[//]: # ()
-[//]: # (```)
+    def fetch(self) -> str:
+        return f"{self.name} is fetching the ball"
 
-[//]: # (---)
+class Cat(Animal):
+    def __init__(self, name: str, color: str) -> None:
+        super().__init__(name, "Cat")
+        self.color: str = color
 
-[//]: # (## Characteristics - Abstraction)
+    def make_sound(self) -> str:
+        return "Meow!"
 
-[//]: # ()
-[//]: # (Hiding internal details and exposing functionalities.)
+    def climb(self) -> str:
+        return f"{self.name} is climbing a tree"
 
-[//]: # ()
-[//]: # (---)
+```
+**Dog** is a subclass that inherits from **Animal**. It overrides the **make_sound()** method and adds a new attribute **breed** and a new method **fetch()**.
+**Cat** subclass inherits from **Animal**, overrides the **make_sound()** method, and adds a new attribute **color** and a new method **climb()**.
 
-[//]: # (## Characteristics - Inheritance)
+---
 
-[//]: # ()
-[//]: # (Ability to create new classes based on existing ones.)
+## Principles - Abstraction - Example
 
-[//]: # ()
-[//]: # ()
-[//]: # (---)
+Hiding internal details and exposing functionalities.
+It allows you to define a common interface for a set of related objects without exposing the underlying complexities.
 
-[//]: # (## Characteristics - Polymorphism)
+```python
+# Pseudocode
+class Animal():
+    def make_sound():
+        pass
 
-[//]: # ()
-[//]: # (Ability of an object to take multiple forms.)
+```
 
-[//]: # ()
-[//]: # (---)
+**Animal** class is an abstract base class.
 
-[//]: # ()
-[//]: # (## Principles - S.O.L.I.D.)
+It contains an abstract method **make_sound()**, which means that any subclass must implement this method.
 
-[//]: # (    )
-[//]: # (* **S**: Single Responsibility Principle)
+---
 
-[//]: # (* **O**: Open/Closed Principle)
+## Principles - Abstraction - Example
 
-[//]: # (* **L**: Liskov Substitution Principle)
+```python
+# Pseudocode
+class Dog(Animal):
+    def make_sound():
+        return "Woof!"
 
-[//]: # (* **I**: Interface Segregation Principle)
+class Cat(Animal):
+    def make_sound():
+        return "Meow!"
 
-[//]: # (* **D**: Dependency Inversion Principle)
+```
+Both **Dog** and **Cat** are concrete classes and inherit from Animal and implement the **make_sound()** method. Each class provides its specific implementation.
 
-[//]: # ()
-[//]: # (---)
+---
 
-[//]: # ()
-[//]: # (## Principles - S.O.L.I.D. - Single Responsibility Principle)
+## Principles - Polymorphism
 
-[//]: # (**Example:** Suppose you have a class Invoice.)
+Objects of different classes can be treated as objects of a common superclass. It enables the same method to behave differently based on the object calling it.
 
-[//]: # (It should only handle tasks related to invoicing, like calculating total amounts.)
+In simpler terms, polymorphism means "many shapes," and it allows methods to do different things based on the object they're acting upon.
 
-[//]: # (If it also handles printing or saving the invoice to a database, that would violate this principle.)
+```python
+# Including Animal, Dog and Cat classes.
+class Bird(Animal):
+    def __init__(self, name: str, color: str) -> None:
+        super().__init__(name, "Bird")
+        self.color: str = color
 
-[//]: # (Instead, create separate classes like InvoicePrinter and InvoiceRepository.)
+    def make_sound(self) -> str:
+        return "Chirp!"
 
-[//]: # (```python)
+# Outside these Animal classes. Example usage:
+def animal_sound(animal: Animal) -> str:
+    print(f"{animal.describe()} It says: {animal.make_sound()}")
+ 
+animals : List[Animal]= [Dog("Buddy"), Cat("Whiskers"), Bird("Tweety")]
 
-[//]: # (class Invoice:)
+for animal in animals:
+    animal_sound(animal)
+```
+---
 
-[//]: # (    def calculate_total&#40;self&#41;:)
+## Conclusion
 
-[//]: # (        # Calculate total amount)
 
-[//]: # (        pass)
+- Object-Oriented Programming is an essential paradigm in modern development.
 
-[//]: # ()
-[//]: # (class InvoicePrinter:)
+- It facilitates the creation of modular, reusable, and maintainable code.
 
-[//]: # (    def print_invoice&#40;self, invoice: Invoice&#41;:)
-
-[//]: # (        # Print the invoice)
-
-[//]: # (        pass)
-
-[//]: # ()
-[//]: # (class InvoiceRepository:)
-
-[//]: # (    def save_to_database&#40;self, invoice: Invoice&#41;:)
-
-[//]: # (        # Save the invoice to the database)
-
-[//]: # (        pass)
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # (---)
-
-[//]: # ()
-[//]: # (## Principles - S.O.L.I.D. - Open/Closed Principle)
-
-[//]: # ()
-[//]: # (**Example:** A PaymentProcessor class should be open to extension but closed to modification.)
-
-[//]: # (If you need to add new payment methods, you should extend the class without modifying existing code.)
-
-[//]: # ()
-[//]: # (---)
-
-[//]: # ()
-[//]: # (## Principles - DRY)
-
-[//]: # ()
-[//]: # (**&#40;Don't Repeat Yourself&#41;:** Avoid code duplication.)
-
-[//]: # ()
-[//]: # (---)
-
-[//]: # ()
-[//]: # (## Principles - KISS)
-
-[//]: # ()
-[//]: # (**&#40;Keep It Simple, Stupid&#41;:** Keep the code simple and straightforward.)
-
-[//]: # ()
-[//]: # ()
-[//]: # (---)
-
-[//]: # ()
-[//]: # (## Conclusion)
-
-[//]: # ()
-[//]: # (- Object-Oriented Programming is an essential paradigm in modern development.)
-
-[//]: # (- It facilitates the creation of modular, reusable, and maintainable code.)
-
-[//]: # (- Understanding OOP is key for any developer.)
+- Understanding OOP is key for any developer.
