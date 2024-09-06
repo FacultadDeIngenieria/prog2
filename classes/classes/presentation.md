@@ -388,14 +388,15 @@ public Complex add(Complex complex)
 public Complex add(Integer integer)
 ```
 
-Constructor can be overloaded to provide different ways of initialization.
+Constructor can be overloaded to provide different ways of initialization:
 ```java
 public Complex(float real, float imaginary);
 public Complex(float real);  //imaginary = 0
 ```
 
 ### In Python
-Python is a dynamically typed language, so the concept of overloading simply does not apply to it. Python cannot select among the alternatives because it cannot discriminate data types at compile-time.
+Python is a dynamically typed language, so the concept of overloading simply does not apply to it. 
+Python cannot select among the alternatives because it cannot discriminate data types at compile-time.
 
 [//]: # (However, we can create such alternative functions at run-time with _multimethods or multiple dispatch._)
 
