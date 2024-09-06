@@ -395,9 +395,7 @@ public Complex(float real);  //imaginary = 0
 ```
 
 ### In Python
-Python is a dynamically typed language, so the concept of overloading simply does not apply to it.
-
-Python cannot select among the alternatives because it cannot discriminate data types at compile-time.
+Python is a dynamically typed language, so the concept of overloading simply does not apply to it. Python cannot select among the alternatives because it cannot discriminate data types at compile-time.
 
 [//]: # (However, we can create such alternative functions at run-time with _multimethods or multiple dispatch._)
 
