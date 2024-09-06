@@ -37,6 +37,10 @@ Blueprint for building objects of the same type.
 - As a general rule, all components of an object should be private. Otherwise, it breaks the _Encapsulation_ rule.
 - However, sometimes for efficiency reasons, a member can be made visible externally, but it must be **final**.
 
+---
+
+## Access modifiers
+
 ### public
 It is visible from the entire program.
 ```java 
@@ -112,6 +116,7 @@ public Interval(float first, float last);   //step = 1
 - They can only be modified by instances of the class, or by class methods.
 
 ```java
+// example
 ```
 
 ---
@@ -207,7 +212,7 @@ public class Triangle {
     
     public double area() {
         double s = perimeter() / 2 ;
-        return Math.sqrt( s * (ab.length() - s) * (bc.length() - s) * (s - ac.length()));
+        return Math.sqrt(s*(ab.length()-s)*(bc.length()-s)*(s-ac.length()));
     }
 }
 ```
@@ -225,6 +230,10 @@ public class Main {
     }
 }
 ```
+
+---
+
+## Equals
 
 Non-built-ins data types use the _equals_ method. 
 
