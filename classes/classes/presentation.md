@@ -27,6 +27,147 @@ Blueprint for building objects of the same type.
 
 ---
 
+## Variables
+
+### Instance variables
+- They contain the state of an object
+- They are only usable for the object that stores them 
+- They cannot be modified from another object
+- They can only be accessed through the object's methods
+
+### Class variables (static)
+- They maintain the internal state of the class type throughout the program’s execution
+- They can only be modified by instances of the class or by class methods
+- Shared data across instances without the need for redundant memory allocation
+- i. e. _idCount_ needs to be consistent across all instances of the class
+
+
+---
+
+### Static vs Non-Static variables example
+```java
+public class InstanceCounter {
+  // Static variable to track the number of instances
+  static int instanceCount = 0;
+
+  // Non-static variable representing instance-specific data
+  String instanceName;
+
+  // Constructor increments the instance count and assigns a name to each instance
+  public InstanceCounter(String name) {
+    instanceName = name;
+    instanceCount++;
+  }
+
+  // Method to display information about each instance
+  void displayInfo() {
+    System.out.println("Instance Name: " + instanceName);
+    System.out.println("Instance Count: " + instanceCount);
+  }
+
+  public static void main(String[] args) {
+    // Creating instances of the class
+    InstanceCounter obj1 = new InstanceCounter("Instance 1");
+    obj1.displayInfo();
+
+    InstanceCounter obj2 = new InstanceCounter("Instance 2");
+    obj2.displayInfo();
+  }
+}
+```
+
+---
+
+## Methods
+
+### Instance methods
+Modify objects belonging to a class only.
+
+The change is only visible to that instance.
+
+To use it, we must first instantiate the class that holds the method definition.
+
+```java
+MyClass obj = new MyClass();
+obj.nonStaticMethod();
+```
+
+### Class methods
+They can receive messages and the change is visible to all member objects of that class.
+
+We don’t need an instance of the class to invoke the method.
+
+```java
+MyClass.staticMethod();
+```
+
+Warning: Static methods can introduce concurrency issues if the method operates on a static member variable.
+
+
+[//]: # (_new_ is an example of a class method.)
+
+[//]: # (---)
+
+[//]: # (## Instance vs Class Example)
+
+[//]: # ()
+[//]: # (```java)
+
+[//]: # (public class Bill {)
+
+[//]: # (    )
+[//]: # (    private static double secondCost = 1.0;)
+
+[//]: # (    private String phone;)
+
+[//]: # (    private Entry[] entries;)
+
+[//]: # ()
+[//]: # (    public Bill&#40;String aPhone&#41; {)
+
+[//]: # (        phone = aPhone;)
+
+[//]: # (        entries = new Entry[50];)
+
+[//]: # (    })
+
+[//]: # (    )
+[//]: # (    public static double getCostPerSecond&#40;&#41; { )
+
+[//]: # (        return secondCost; )
+
+[//]: # (    })
+
+[//]: # (    )
+[//]: # (    public static void setCost&#40;double cost&#41; { )
+
+[//]: # (        secondCost = cost; )
+
+[//]: # (    })
+
+[//]: # (    )
+[//]: # (    public void register&#40;String destination, int seconds&#41; {)
+
+[//]: # (        int free = nextFree&#40;&#41;;)
+
+[//]: # (        if &#40;free == -1&#41; {)
+
+[//]: # (            throw new RuntimeException&#40;"No hay más lugar..."&#41;;)
+
+[//]: # (        })
+
+[//]: # (        this.entries[free] = )
+
+[//]: # (                new Entry&#40;destination, seconds, seconds * getCostPerSecond&#40;&#41;&#41;;)
+
+[//]: # (    })
+
+[//]: # (})
+
+[//]: # (```)
+
+---
+
 ## Access modifiers
 
 ### Methods
@@ -38,6 +179,16 @@ Some should be private, so that behavior can also be hidden from the outside.
 As a general rule, all components of an object should be private. Otherwise, it breaks the _Encapsulation_ rule.
 
 However, sometimes for efficiency reasons, a member can be made visible externally, but it must be **final**.
+
+```java
+public class Main {
+    public static final int MAX_VALUE = 10; // CONSTANT
+    
+    public static void main() {
+      System.out.println("Number:" + Math.random() * MAX_VALUE);
+    }
+}
+```
 
 ---
 
@@ -86,74 +237,6 @@ class Employee:
       print ("Name : ", self.name, ", age: ", self.__age, ", salary: ", self._salary)
  
 ```
-
----
-
-## Variables
-
-### Instance variables
-- They contain the state of an object
-- They are only visible to the object that contains them 
-- They cannot be modified from the outside
-- They can only be accessed through the object's methods
-
-### Class variables
-- They maintain the internal state of the class 
-- They are only visible to instances of the class 
-- They can only be modified by instances of the class, or by class methods.
-
----
-
-## Methods
-
-### Instance methods
-Modify objects belonging to a class only.
-
-The change is only visible to the object in question.
-
-### Class methods
-They can receive messages and the change is visible to all member objects of that class.
-
-_new_ is an example of a class method.
-
----
-
-## Instance vs Class Example
-
-```java
-public class Bill {
-    
-    private static double secondCost = 1.0;
-    private String phone;
-    private Entry[] entries;
-
-    public Bill(String aPhone) {
-        phone = aPhone;
-        entries = new Entry[50];
-    }
-    
-    public static double getCostPerSecond() { 
-        return secondCost; 
-    }
-    
-    public static void setCost(double cost) { 
-        secondCost = cost; 
-    }
-    
-    public void register(String destination, int seconds) {
-        int free = nextFree();
-        if (free == -1) {
-            throw new RuntimeException("No hay más lugar...");
-        }
-        this.entries[free] = 
-                new Entry(destination, seconds, seconds * getCostPerSecond());
-    }
-}
-```
-
----
-
-## Static vs Class
 
 ---
 
@@ -292,13 +375,10 @@ public class Main {
 
 ---
 
-## Overloading in Java
+## Overloading
 Two or more methods have the same name but different numbers of parameters or different types of parameters, or both.
 
-You can reuse the name of a method, so that it is easier to understand.
-
-For example, it would be nice if adding an integer to a complex number was just as readable as adding a complex number to another complex number.
-
+You can reuse the name of a method, so that it is more intuitive and easier to understand.
 ```java
 public Complex add(Complex complex)
 public Complex add(Integer integer)
@@ -307,22 +387,18 @@ public Complex addComplex(Complex complex);
 public Complex addInt(int i);
 ```
 
-A Constructor is a method too, and therefore can be overloaded in order to provide more than one way to initialize an object.
-
+A Constructor is a method too, it can be overloaded in order to provide more than one way to initialize an object.
 ```java
 public Complex(float real, float imaginary);
 public Complex(float real);  //imaginary = 0
 ```
 
-
----
-
-## Overloading in Python
-When working with languages that can discriminate data types at compile-time, selecting among the alternatives can occur at compile-time.
-
+### In Python
 Python is a dynamically typed language, so the concept of overloading simply does not apply to it.
 
-However, we can create such alternative functions at run-time with _multimethods or multiple dispatch._
+Python cannot select among the alternatives because it cannot discriminate data types at compile-time.
+
+[//]: # (However, we can create such alternative functions at run-time with _multimethods or multiple dispatch._)
 
 ---
 
@@ -342,7 +418,8 @@ For example:
 
 However, this pattern should not be overused, as it makes the code
 completely coupled with itself, making it difficult to maintain and test.
-#
+
+
 **How would you do it?**
 
 ---
