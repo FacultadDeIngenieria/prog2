@@ -4,14 +4,6 @@ class: center, middle, inverse
 
 ---
 
-## OOP Quiz
-
-10 minutes
-
-https://forms.gle/FtFccZPB1brZzhVY7
-
----
-
 ## Class
 
 Blueprint for building objects of the same type.
@@ -24,12 +16,14 @@ Blueprint for building objects of the same type.
   - Defines a contract/protocol for how to interact through its messages that can receive (method signature).
   - How it will react and change its internal state, and what information it will make visible to the outside world (getters & setters).
 
-[//]: # (.center[![Illustration]&#40;{{site.baseurl}}/classes/classes/illustration.png&#41;])
+.center[![Model]({{site.baseurl}}/classes/classes/class_model.png)]
 
 
-[//]: # (---)
+---
 
-[//]: # (## Lifecycle)
+## Lifecycle
+
+.center[![Lifecycle]({{site.baseurl}}/classes/classes/lifecycle.png)]
 
 ---
 
@@ -188,6 +182,7 @@ The container object is called an _Aggregate_. The contained objects are called 
 - i.e. Cellular and antenna: no sense without antenna 
 - Relationship: “it is a”
 
+.center[![Lifecycle]({{site.baseurl}}/classes/classes/aggregations.png)]
 
 ---
 
@@ -219,7 +214,7 @@ public class Triangle {
 
 ---
 
-### Equals
+## Equals
 
 Built-in data types use a space in memory, so the == operator compares each element in the memory it represents.
 
