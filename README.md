@@ -6,8 +6,9 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 3. [Types in python](types-in-python)
 4. [Java Collections](java-collections)
 5. [TDD](tdd)
-5. [Recursion](recursion)
-6. [Object-Oriented Programming (OOP)](oop)
+6. [Recursion](recursion)
+7. [Object-Oriented Programming (OOP)](oop)
+8. [Classes](classes)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)

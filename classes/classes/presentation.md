@@ -67,6 +67,8 @@ protected void setName(String name)    // student.setName("Diego")
 protected String name;                 // student.name 
 ```
 
+---
+
 ## Access modifiers in Python
 
 By default, all the variables and methods in a Python class are public.
@@ -148,6 +150,10 @@ public class Bill {
     }
 }
 ```
+
+---
+
+## Static vs Class
 
 ---
 
@@ -286,8 +292,7 @@ public class Main {
 
 ---
 
-## Overloading
-
+## Overloading in Java
 Two or more methods have the same name but different numbers of parameters or different types of parameters, or both.
 
 You can reuse the name of a method, so that it is easier to understand.
@@ -309,7 +314,10 @@ public Complex(float real, float imaginary);
 public Complex(float real);  //imaginary = 0
 ```
 
-### In Python
+
+---
+
+## Overloading in Python
 When working with languages that can discriminate data types at compile-time, selecting among the alternatives can occur at compile-time.
 
 Python is a dynamically typed language, so the concept of overloading simply does not apply to it.
@@ -328,13 +336,13 @@ The goal is to provide a standardized solution to a recurring problem.
 There are cases where there is only one instance of an object in the system. 
 
 For example:
-- Runtime, the class that represents the Java virtual machine
+- Runtime, the class that represents the Java virtual machine // Runtime.getRuntime()
 - The application we are building
 - The graphical environment
 
 However, this pattern should not be overused, as it makes the code
 completely coupled with itself, making it difficult to maintain and test.
-
+#
 **How would you do it?**
 
 ---
@@ -361,9 +369,7 @@ public class Application {
     
     private Application() {
         
-        StudentDataBase.getInstance();
-        
-        Runtime.getRuntime();
+        studentDatabase = StudentDataBase.getInstance();
     }
 }
 ```
