@@ -21,58 +21,55 @@ Blueprint for building objects of the same type.
 
 ---
 
-## Lifecycle
+## Object construction & lifecycle
 
 .center[![Lifecycle]({{site.baseurl}}/classes/classes/lifecycle.png)]
-
----
-
-## Access modifiers 
-
-### Methods
-- It is not good for all methods to be public.
-- Some should be private, so that behavior can also be hidden from the outside.
-
-### State
-- As a general rule, all components of an object should be private. Otherwise, it breaks the _Encapsulation_ rule.
-- However, sometimes for efficiency reasons, a member can be made visible externally, but it must be **final**.
 
 ---
 
 ## Access modifiers
 
 ### public
-It is visible from the entire program.
+- It is visible from the entire program.
 ```java 
 public void deposit(float amount)
-
 public final int cbu;     // account.cbu 
 ```
 
 ### private 
-Only accessible from the same class.
+- Only accessible from the same class.
 ```java 
 private void validate();
-
 private float balance;
 ```
 
 ### protected
-Only accessible from classes in the same package or subclasses.
+- Only accessible from classes in the same package or subclasses.
 ```java 
 protected void setName(String name)    // student.setName("Diego")
-
 protected String name;                 // student.name 
 ```
 
 ### package (defalut)
-Only accessible from the same package but not subclasses in other packages.
+- Only accessible from the same package but not subclasses in other packages.
 ```java 
 protected void setName(String name)    // student.setName("Diego")
-
 protected String name;                 // student.name 
 ```
 
+---
+
+## Access modifiers
+
+### Methods
+It is not good for all methods to be public.
+
+Some should be private, so that behavior can also be hidden from the outside.
+
+### State
+As a general rule, all components of an object should be private. Otherwise, it breaks the _Encapsulation_ rule.
+
+However, sometimes for efficiency reasons, a member can be made visible externally, but it must be **final**.
 
 ---
 
@@ -162,7 +159,8 @@ public class Bill {
         if (free == -1) {
             throw new RuntimeException("No hay más lugar...");
         }
-        this.entries[free] = new Entry(destination, seconds, seconds * getCostPerSecond());
+        this.entries[free] = 
+                new Entry(destination, seconds, seconds * getCostPerSecond());
     }
 }
 ```
@@ -177,9 +175,13 @@ We think of it as something "part of" another thing relationship.
 
 The container object is called an _Aggregate_. The contained objects are called _components or parts._
 
+.center[![Example]({{site.baseurl}}/classes/classes/aggregation_examples.png)]
+
+---
+
 ### Weak Aggregation
 - The component lifecycle is independent of the aggregate object. 
-- i.e. classroom and chair: a classroom can have zero, one, or several chairs. 
+- i.e. classroom and chair: can have zero, one, or several chairs. 
 - Relationship: “has a”
 
 ### Strong Aggregation
@@ -187,7 +189,7 @@ The container object is called an _Aggregate_. The contained objects are called 
 - i.e. Cellular and antenna: no sense without antenna 
 - Relationship: “it is a”
 
-.center[![Lifecycle]({{site.baseurl}}/classes/classes/aggregations.png)]
+.center[![Aggregations]({{site.baseurl}}/classes/classes/aggregations.png)]
 
 ---
 
@@ -221,7 +223,9 @@ public class Triangle {
 
 ## Equals
 
-Built-in data types use a space in memory, so the == operator compares each element in the memory it represents.
+### Built-in data types 
+
+Use a space in memory, so the == operator compares each element in the memory it represents.
 
 ```java
 public class Main {
@@ -231,15 +235,19 @@ public class Main {
 }
 ```
 
+### Non-built-ins data types
+
+Use the _equals_ method.
+
+All classes implement it.
+
+If not defined, it compares memory addresses.
+
 ---
 
 ## Equals
 
-Non-built-ins data types use the _equals_ method. 
-
-All classes implement it. 
-
-If not defined, it compares memory addresses.
+### Non-built-ins data types
 
 ```java
 public class Book {
