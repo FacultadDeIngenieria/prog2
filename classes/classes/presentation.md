@@ -35,7 +35,7 @@ Blueprint for building objects of the same type.
 - They cannot be modified from another object
 - They can only be accessed through the object's methods
 
-### Class variables (static)
+### Class variables
 - They maintain the internal state of the class type throughout the program’s execution
 - They can only be modified by instances of the class or by class methods
 - Shared data across instances without the need for redundant memory allocation
@@ -101,8 +101,8 @@ We don’t need an instance of the class to invoke the method.
 MyClass.staticMethod();
 ```
 
-Warning: Static methods can introduce concurrency issues if the method operates on a static member variable.
 
+[//]: # (Warning: Static methods can introduce concurrency issues if the method operates on a static member variable.)
 
 [//]: # (_new_ is an example of a class method.)
 
@@ -268,7 +268,9 @@ The container object is called an _Aggregate_. The contained objects are called 
 
 ---
 
-## Composition Example
+## Composition 
+
+### Example
 
 ```java
 public class Triangle {
@@ -320,9 +322,9 @@ If not defined, it compares memory addresses.
 
 ---
 
-## Equals example
+## Equals
 
-### Non-built-in data types
+### Non-built-in data types example
 
 ```java
 public class Book {
@@ -354,9 +356,9 @@ public class Book {
 
 ---
 
-## Equals example test
+## Equals
 
-### Non-built-in data types
+### Non-built-in data types example test
 
 ```java
 public class Main {
@@ -376,18 +378,18 @@ public class Main {
 ---
 
 ## Overloading
-Two or more methods have the same name but different numbers of parameters or different types of parameters, or both.
+When two or more methods have the same name but different numbers of parameters or different types of parameters, or both.
 
-You can reuse the name of a method, so that it is more intuitive and easier to understand.
+Reusing the name of a method makes it more intuitive and easier to understand.
 ```java
-public Complex add(Complex complex)
-public Complex add(Integer integer)
-
 public Complex addComplex(Complex complex);
 public Complex addInt(int i);
+
+public Complex add(Complex complex)
+public Complex add(Integer integer)
 ```
 
-A Constructor is a method too, it can be overloaded in order to provide more than one way to initialize an object.
+A constructor can be overloaded in order to provide different ways to initialize it.
 ```java
 public Complex(float real, float imaginary);
 public Complex(float real);  //imaginary = 0
