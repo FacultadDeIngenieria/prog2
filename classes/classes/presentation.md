@@ -378,8 +378,7 @@ public class Main {
 ---
 
 ## Overloading
-When two or more methods have the same name but different numbers of parameters or different types of parameters, or both.
-
+When two or more methods have the same name but different numbers of parameters or different types of parameters, or both. 
 Reusing the name of a method makes it more intuitive and easier to understand.
 ```java
 public Complex addComplex(Complex complex);
@@ -389,7 +388,7 @@ public Complex add(Complex complex)
 public Complex add(Integer integer)
 ```
 
-A constructor can be overloaded in order to provide different ways to initialize it.
+Constructor can be overloaded to provide different ways of initialization.
 ```java
 public Complex(float real, float imaginary);
 public Complex(float real);  //imaginary = 0
