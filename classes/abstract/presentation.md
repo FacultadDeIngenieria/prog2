@@ -66,17 +66,6 @@ class Dog extends Animal {
 
 ---
 
-## Abstract Class vs Interface
-
-| Abstract Class                          | Interface                            |
-|-----------------------------------------|--------------------------------------|
-| Can have abstract and non-abstract methods | All methods are abstract by default (in older versions of Java) |
-| Can have constructors                   | Cannot have constructors             |
-| Can have instance variables             | Cannot have instance variables       |
-| Subclass uses `extends` to inherit      | Class uses `implements` to use an interface |
-
----
-
 ## When to Use Abstract Classes?
 
 - When you want to share **common code** among related classes.
@@ -127,6 +116,38 @@ class Bicycle extends Vehicle {
   }
 }
 ```
+
+---
+
+## Constructors in Abstract Classes
+
+- **Abstract classes** can have constructors, even though you cannot instantiate them directly.
+- These constructors are called when a **subclass** is instantiated.
+- They are used to initialize fields that are common to all subclasses.
+
+### Example:
+```java
+abstract class Animal {
+  String name;
+
+  // Constructor for the abstract class
+  public Animal(String name) {
+    this.name = name;
+  }
+
+  public abstract void sound();
+}
+
+class Dog extends Animal {
+  public Dog(String name) {
+    super(name);  // Calling the abstract class constructor
+  }
+
+  public void sound() {
+    System.out.println(name + " says: Bark");
+  }
+}
+
 
 ---
 
