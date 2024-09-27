@@ -17,6 +17,7 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 3. [TP3](practice/3)
 4. [TP4](practice/4)
 5. [TP5](practice/5)
+6. [TP University](https://classroom.github.com/a/wJgSLMuH)
 
 ## Recursos
 1. [Instalación de Java y Python](utils/installation)
