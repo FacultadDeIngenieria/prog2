@@ -9,6 +9,7 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 6. [Recursion](recursion)
 7. [Object-Oriented Programming (OOP)](oop)
 8. [Classes](classes)
+9. [Abstract Classes & Inheritance](abstract)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)
