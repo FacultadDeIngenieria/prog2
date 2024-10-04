@@ -52,6 +52,8 @@ class CreditCard extends PaymentMethod {
 
 ```
 
+---
+
 ```java
 
 class Cash extends PaymentMethod {
@@ -165,7 +167,91 @@ class PushNotification(Notification):
 
 ```
 
+## How do we use polymorphism?
 
+```python
 
+class OTPService:
+    notification: Notification
 
+    def set_notification(self, notification: Notification):
+        self.notification = notification
+
+    def send_otp(self, user: User) -> bool:
+        otp = generate_otp()
+        return self.notification.send(user, Message(otp))
+
+```
+
+---
+
+## What are interfaces?
+
+- An interface is a contract that defines the methods that a class must implement.
+- An interface is a reference type in Java, similar to a class, that can contain
+only constants, method signatures, default methods, static methods, and nested types.
+
+---
+
+## Interfaces in Java, used as "IS-A"
+
+```java
+
+interface PaymentMethod {
+    float charge(float amount);
+}
+
+interface Notification {
+    boolean send(User user, Message message);
+}
+
+```
+
+---
+
+## Interfaces in Java, used as "CAN-DO"
+
+```java
+
+interface CSVSavable {
+    CSV toCSV();
+}
+
+interface Nameable {
+    String getName();
+}
+
+interface Runnable {
+    void run();
+}
+
+```
+
+## Multiple inheritance in Java
+
+```java
+
+class Student implements Nameable, CSVSavable {
+    String name;
+
+    public String getName() {
+        return name;
+    }
+    
+    public CSV toCSV() {
+        return new CSV(name);
+    }
+}
+
+```
+
+---
+
+## Interfaces vs Abstract Classes
+
+State: Interfaces cannot have instance fields, while abstract classes can have fields.
+
+Because of that reason, abstract classes can define constructors, while interfaces cannot.
+
+---
 
