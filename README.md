@@ -11,6 +11,7 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 8. [Classes](classes)
 9. [Abstract Classes & Inheritance](abstract)
 10. [Polymorphism and interfaces](polymorphism)
+11. [Coverage](coverage)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)
