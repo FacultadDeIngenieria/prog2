@@ -167,6 +167,8 @@ class PushNotification(Notification):
 
 ```
 
+---
+
 ## How do we use polymorphism?
 
 ```python
@@ -227,6 +229,8 @@ interface Runnable {
 
 ```
 
+---
+
 ## Multiple inheritance in Java
 
 ```java
@@ -253,5 +257,4 @@ State: Interfaces cannot have instance fields, while abstract classes can have f
 
 Because of that reason, abstract classes can define constructors, while interfaces cannot.
 
----
 
