@@ -18,3 +18,4 @@ There are several types of coverage metrics used in software testing:
 - **Branch coverage**: how many branches of decision points structures have been executed.
 - **Function coverage**: how many of the functions defined have been called.
 
+---
