@@ -14,6 +14,8 @@ It cannot be used in _class methods_ or _class variables_.
 
 The parameter can be any type of Object, but not built-ins.
 
+
+
 ```java
 public class List<T> {
     ...
@@ -95,7 +97,9 @@ Generic types can be inherited
 public class SubClass<T> extends SuperClass<T> {
     //...
 }
+```
 
+```java
 public class SubClass extends SuperClass<String> {
     //...
 }
@@ -114,7 +118,9 @@ However, the generic type is limited:
 public interface Integrable<T extends Number> {
     //...
 }
+```
 
+```java
 public class Box<T extends Number & Cloneable> {
     //...
 }
@@ -122,8 +128,7 @@ public class Box<T extends Number & Cloneable> {
 
 ---
 
-## Warning
-
+## Warning!
 String is a subclass of Object... but Box<String> is not a subclass of Box<Object>
 
 ```java
@@ -132,13 +137,11 @@ public class Example {
         Box<String> boxString = new Box<String>("String"); //Ok
         Box<Object> boxObject = boxString; //Error!
 
-        //Another example
+        //Another example ------------------------------
         List<Teacher> teachers = new ArrayList<>();
-        
         calculateSalaries(teachers); //Error
         calculateSalaries((List<Employee>) teachers); //Error
     }
-
     public double calculateSalaries(List<Employee> employees) {
         double salaries = 0;
         for (Employee e : employees) {
@@ -151,16 +154,12 @@ public class Example {
                 
 ```java
 public class Employee {
-    public double getSalary() {
-        //...
-    }
+    public double getSalary() {...}
 }
 
 public class Teacher extends Employee {
 }
 ```
-
----
 
 ---
 
@@ -264,7 +263,11 @@ In addition, there is a class to work with collections in a generic way.
 
 ### Examples
 - Collections.EMPTY_LIST: it is an empty list. 
+
 - Collections.sort(List<T> collection, {comparator}) : orders the list. 
+
 - Collections.unmodificableList(List<?> list) : returns a list that throws errors when you want to modify it.
+
 - Collections.syncronizedSet(Set<?> set): returns a set that cannot be modified concurrently.
+
 - Collections.swap(List<?> list, int i, int j);
