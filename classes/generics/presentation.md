@@ -8,35 +8,44 @@ class: center, middle, inverse
 
 It is a class or interface that has a parameterized type.
 
-Instead of using an Object type, use a variable: S, T, or the desired parameter.
+Instead of using an _Object Type_, use a _Variable Type_: S, T, U, V or the desired parameter.
 
 It cannot be used in _class methods_ or _class variables_. 
 
 The parameter can be any type of Object, but not built-ins.
 
-
-
 ```java
-public class List<T> {
-    ...
+public class Box<T> {
+    //...
 }
 ```
 
 ```java
-public interface Map<S, T> {
-    ...
+public class List<E> {
+    //...
 }
 ```
+
+```java
+public interface Map<K, V> {
+    //...
+}
+```
+
+Why don't we want to have a list of each type? or a list of _Object_?
 
 ---
 
-## Examples
+## Example
 ```java
 public class Box<T> {
+    
     private T element;
+    
     public Box(T element) {
         this.element = element;
     }
+    
     public void setElement(T element) {
         this.element = element;
     }
@@ -50,7 +59,8 @@ public class Box<T> {
 public class Main {
     public static void main(String[] args) {
         
-        //You can only pass a String or subclass of String, as an argument
+        //If your declared Type is String, 
+        //You can only pass a String or subclass of String as an argument
         Box<String> box = new Box<String>("Hello");
         
         //It is not necessary to cast, because getElement returns String
@@ -62,18 +72,21 @@ public class Main {
 
 ---
 
-## Examples
+## Type Safety
+
+The compiler checks types on assignments:
+  - Casting is avoided 
+  - Elements must be of the indicated type
+
 ```java
 public class Main {
     public static void main(String[] args) {
         
-        //The compiler checks types on assignments
-        //Casting is avoided and it is checked that the elements are of the indicated type
         Box<String> boxString = new Box<String>("Hello");
         Box<Integer> boxInteger = new Box<Integer>(1);
         
         String msg = boxString.getElement(); //OK
-        String msg2 = boxInteger.getElement(); //Error!
+        String msg2 = boxInteger.getElement(); //Error
         boxInteger.setElement("String"); //Error
         
         //When executed, the generic type disappears
@@ -112,7 +125,7 @@ public class SubClass extends SuperClass<String> {
 
 The same goes for interfaces.
 
-However, the generic type is limited:
+However, the generic type is limited with _bounded types_:
 
 ```java
 public interface Integrable<T extends Number> {
@@ -121,7 +134,13 @@ public interface Integrable<T extends Number> {
 ```
 
 ```java
-public class Box<T extends Number & Cloneable> {
+public class Box<T extends Serializable> {
+    //...
+}
+```
+
+```java
+public class Box<T extends Number & Iterable & Cloneable> {
     //...
 }
 ```
@@ -219,7 +238,7 @@ public class Example {
 
 ```java
 public <T> void doSomething(T element) {
-    ...
+    //...
 }
 ```
 
@@ -232,6 +251,21 @@ public <T> void remove(T[] array, T element) {
 ```java
 public <T> void remove(T[] array, T element) {
     ...
+}
+```
+
+### Multiple Generic Types
+
+```java
+public <T, U, V> void example(T t, U u, V v) {
+    ...
+}
+```
+
+```java
+public <T, U, V> T example(T t, U u, V v) {
+    ...
+    return t;
 }
 ```
 
