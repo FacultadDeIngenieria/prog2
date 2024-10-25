@@ -14,6 +14,7 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 11. [Coverage](coverage)
 12. [Generics](generics)
 13. [Packages](https://docs.google.com/presentation/d/1DdAOhl1FPAeZKNiHjDakr3-B_ty--FwowzA8bYkgrh0/edit?usp=sharing)
+14. [Exceptions](exceptions)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)
