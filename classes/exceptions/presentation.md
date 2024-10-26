@@ -8,9 +8,6 @@ class: center, middle, inverse
 
 They indicate the occurrence of an unexpected event.
 
-When an exception occurs within a method, it creates an object that contains information about the exception,
-such as the name and description of the exception and the state of the program when the exception occurred.
-
 Major reasons why an exception occurs:
 - Invalid user input 
 - Code errors 
@@ -23,7 +20,7 @@ Major reasons why an exception occurs:
 - Physical limitations (out-of-disk memory)
 
 
-### Real-life comparison.
+### Real-life comparison
 Imagine that we order a product online, but while en-route, there’s a failure in delivery. A good company can handle this problem and gracefully re-route our package so that it still arrives on time.
 
 Likewise, in Java, the code can experience errors while executing our instructions. Good exception handling can handle errors and gracefully re-route the program to give the user still a positive experience.
@@ -31,6 +28,11 @@ Likewise, in Java, the code can experience errors while executing our instructio
 ---
 
 ## Syntax
+
+When an exception occurs within a method, it creates an object that contains 
+information about the exception, such as the name and description of the 
+exception and the state of the program when the exception occurred.
+
 ```java
 try {
     //Code that can throw an exception
@@ -60,7 +62,7 @@ There are three main categories of exceptional conditions:
 
 - **Checked exceptions**: data/procedures/code errors (Exception)
 - **Unchecked exceptions**: programming errors (Runtime Exceptions) 
-- **Errors**: java errors, don't handle.
+- **Errors**: java errors, don't handle! (i.e. OutOfMemoryError)
 
 .center[![Model]({{site.baseurl}}/classes/exceptions/exception-hierarchy.png)]
 
@@ -68,10 +70,11 @@ There are three main categories of exceptional conditions:
 
 ## Checked Exceptions
 
-Checked exceptions are exceptions that the Java compiler requires us to handle. We have to either declaratively throw the exception up the call stack, or we have to handle it ourselves. More on both of these in a moment.
+Checked exceptions are situational errors that Java compiler _requires us to handle_. 
 
-- They are recoverable errors or errors that are not related to programming
+- They are recoverable errors that are not related to programming
 - They are exceptions that inherit from Exception (but not from RuntimeException)
+- Throw them when we can reasonably expect the caller of our method to be able to recover.
 
 ```java
 public void processFile(String fileName) {
@@ -81,7 +84,7 @@ public void processFile(String fileName) {
         reader.close();
         
     } catch(FileNotFoundExcepcion e) {
-        System.out.println(“No se encontró el archivo : “ + fileName);
+        System.out.println(“Didn't find the file' : “ + fileName);
             
     } catch(IOException e) {
         //Do something more
@@ -89,7 +92,7 @@ public void processFile(String fileName) {
 }
 ```
 
-If exceptions are not caught, it must be declared in the method, that the exception can be thrown.
+If exceptions are not caught, it must be declared in the method that the exception can be thrown.
 
 ```java
 public void processFile(String fileName) throws IOException {
@@ -103,10 +106,11 @@ public void processFile(String fileName) throws IOException {
 ---
 
 ## Unchecked Exceptions
-Unchecked exceptions are exceptions that the Java compiler does not require us to handle.
+Unchecked exceptions are usage errors that Java compiler _does not require us to handle_.
 
-These are exceptions that are produced by a programming error, or are not recoverable. 
-They should not be caught, and do not need to be caught. They inherit from RuntimeException.
+- These are exceptions that are produced by a programming error, or are not recoverable. 
+- They should not be caught, and do not need to be caught. 
+- They inherit from RuntimeException.
 
 Examples:
 - IndexOutOfBoundsException
@@ -115,21 +119,23 @@ Examples:
 - NullPointerException
 - ClassCastException
 
-```java
-```
-
 ---
 
 ## Errors
 
 Errors represent serious and usually irrecoverable conditions like a library incompatibility, infinite recursion, or memory leaks.
 
-```java
-```
+It’d be weird for us to handle, instantiate or extend Errors. 
+
+Usually, we want these to propagate all the way up.
+
+Examples:
+- StackOverflowError
+- OutOfMemoryError
 
 ---
 
-## Finally Block examples
+## Example
 
 ```java
 public static void main(String[] args) {
@@ -160,33 +166,35 @@ Always get executed
 
 ---
 
-## Finally Block example 2
+## Multiple catch Blocks
+
+Sometimes, the code can throw more than one exception, and we can have more than one catch block handle each individually.
+
+Java lets us handle subclass exceptions separately, remember to place them higher in the list of catches.
 
 ```java
-public static void main(String[] args) {
-    System.out.println("Before testCode()");
-    testCode();
-    System.out.println("After testCode()");
-}
-
-private static void testCode() {
-    try {
-        System.out.println("Before Return");
-        return;
-        
-    } finally {
-        System.out.println("Finally...");
+public int getPlayerScore(String playerFile) {
+    try (Scanner contents = new Scanner(new File(playerFile))) {
+        return Integer.parseInt(contents.nextLine());
+    } catch (IOException e) {
+        logger.warn("Player file wouldn't load!", e);
+        return 0;
+    } catch (NumberFormatException e) {
+        logger.warn("Player file was corrupted!", e);
+        return 0;
+    } catch (TimeoutException | ConnectionException e) {
+        logger.warn("Failed to load score!", e);
+        return 0;
     }
 }
 ```
 
-Prints:
-```
-Before testCode()
-Before Return
-Finally...
-After testCode()
-```
+Multiple catches give us the chance to handle each exception differently, should the need arise.
+
+Also note here that we didn’t catch FileNotFoundException, and that is because it extends IOException. 
+Because we’re catching IOException, Java will consider any of its subclasses also handled.
+
+When we know that the way we handle errors is going to be the same, you can catch multiple exceptions in the same block.
 
 ---
 
@@ -215,13 +223,13 @@ public MyException extends RuntimeException {
 
 ## Rules
 
-- When reporting that a method throws an exception, it should be as general as possible, but within the framework being discussed. i.e IOException 
+- When reporting that a method throws an exception, it should be as general as possible, but within the framework being discussed. 
+  i.e. IOException
 - Do not catch Throwable 
-- In a “layered” system, catch exceptions, log them, and rethrow them, wrapping the caught one with the new one, onion style.
-
-1. Presentation 
-2. Application 
-3. Persistence
+- In a “layered” system, catch exceptions, log them, and rethrow them, wrapping the caught one with the new one. Onion style:
+  1. Presentation 
+  2. Application 
+  3. Persistence
 
 ```java
 catch(AplicationException e) {
