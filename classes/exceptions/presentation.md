@@ -19,11 +19,12 @@ Major reasons why an exception occurs:
 - Loss of network connection
 - Physical limitations (out-of-disk memory)
 
+---
 
 ### Real-life comparison
-Imagine that we order a product online, but while en-route, there’s a failure in delivery. A good company can handle this problem and gracefully re-route our package so that it still arrives on time.
+Imagine that we order a product online but there’s a failure in delivery. A good company can handle this problem and gracefully re-route our package so that it can still arrive.
 
-Likewise, in Java, the code can experience errors while executing our instructions. Good exception handling can handle errors and gracefully re-route the program to give the user still a positive experience.
+Likewise, the code can experience errors while executing our instructions. Good exception handling can handle errors and gracefully re-route the program to give the user still a positive experience.
 
 ---
 
@@ -89,7 +90,13 @@ public void processFile(String fileName) {
     }
 }
 ```
+
+---
+
+### Throws
+
 If exceptions are not caught, it must be declared in the method that the exception can be thrown.
+
 ```java
 public void processFile(String fileName) throws IOException {
     FileReader reader = new FileReader(new File(fileName));
@@ -97,6 +104,10 @@ public void processFile(String fileName) throws IOException {
     reader.close();
 }
 ```
+
+The simplest way to “handle” an exception is to rethrow it.
+
+But it does mean that anyone that calls our method now needs to handle it too.
 
 ---
 
