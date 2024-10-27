@@ -56,7 +56,7 @@ public void dangerousMethod() {
 
 ## Hierarchy
 
-Exceptions are just Java objects with all of them extending from Throwable
+Exceptions are just Java objects with all of them extending from Throwable.
 
 There are three main categories of exceptional conditions:
 
@@ -70,10 +70,10 @@ There are three main categories of exceptional conditions:
 
 ## Checked Exceptions
 
-Checked exceptions are situational errors that Java compiler _requires us to handle_. 
+Checked exceptions are situational errors that Java _requires us to handle_. 
 
 - They are recoverable errors that are not related to programming
-- They are exceptions that inherit from Exception (but not from RuntimeException)
+- They are exceptions that inherit from Exception
 - Throw them when we can reasonably expect the caller of our method to be able to recover.
 
 ```java
@@ -82,23 +82,18 @@ public void processFile(String fileName) {
         FileReader reader = new FileReader(new File(fileName));
         //process file
         reader.close();
-        
     } catch(FileNotFoundExcepcion e) {
         System.out.println(“Didn't find the file' : “ + fileName);
-            
     } catch(IOException e) {
         //Do something more
     }
 }
 ```
-
 If exceptions are not caught, it must be declared in the method that the exception can be thrown.
-
 ```java
 public void processFile(String fileName) throws IOException {
     FileReader reader = new FileReader(new File(fileName));
     //process file
-        
     reader.close();
 }
 ```
@@ -166,11 +161,13 @@ Always get executed
 
 ---
 
-## Multiple catch Blocks
+## Multiple catch blocks
 
-Sometimes, the code can throw more than one exception, and we can have more than one catch block handle each individually.
-
-Java lets us handle subclass exceptions separately, remember to place them higher in the list of catches.
+- Multiple catches give us the chance to handle each exception differently.
+- Remember to place them higher in the list of catches.
+- When we’re catching IOException, all of its subclasses are also handled (FileNotFoundException).
+- When we know that the way we handle errors is going to be the same, 
+  you can catch multiple exceptions in the same block.
 
 ```java
 public int getPlayerScore(String playerFile) {
@@ -189,18 +186,11 @@ public int getPlayerScore(String playerFile) {
 }
 ```
 
-Multiple catches give us the chance to handle each exception differently, should the need arise.
-
-Also note here that we didn’t catch FileNotFoundException, and that is because it extends IOException. 
-Because we’re catching IOException, Java will consider any of its subclasses also handled.
-
-When we know that the way we handle errors is going to be the same, you can catch multiple exceptions in the same block.
-
 ---
 
 ## Custom Exceptions
 
-Errors represent serious and usually irrecoverable conditions like a library incompatibility, infinite recursion, or memory leaks.
+We can create Exceptions inside our domain in order to be able to handle it separately and to hold our own information, such as the name of the user of our app. 
 
 ```java
 public MyException extends Exception {
@@ -231,14 +221,16 @@ public MyException extends RuntimeException {
   2. Application 
   3. Persistence
 
-```java
-catch(AplicationException e) {
-    throw new PresentationException(e);
-}
-```
 
 ```java
 catch(PersistenceException e) {
     throw new AplicationException(e);
 }
 ```
+
+```java
+catch(AplicationException e) {
+    throw new PresentationException(e);
+}
+```
+
