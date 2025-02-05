@@ -1,7 +1,7 @@
 ---
 title: Introducción a Java
 layout: practice
-permalink: /introduction
+permalink: /exercises/introduction
 ---
 
 ## Ejercicio 1

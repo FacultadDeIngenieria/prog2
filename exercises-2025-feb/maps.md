@@ -1,7 +1,7 @@
 ---
 title: Mapas
 layout: practice
-permalink: /maps
+permalink: /exercises/maps
 ---
 
 ## Ejercicio 1

@@ -1,7 +1,7 @@
 ---
 title: Excepciones
 layout: practice
-permalink: /exceptions
+permalink: /exercises/exceptions
 ---
 
 ## Ejercicio 1

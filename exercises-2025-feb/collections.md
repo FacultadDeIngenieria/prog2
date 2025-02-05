@@ -1,7 +1,7 @@
 ---
 title: Collections
 layout: practice
-permalink: /collections
+permalink: /exercises/collections
 ---
 
 # Trabajo Práctico 2 - Ejercicio 2 - Java Collections

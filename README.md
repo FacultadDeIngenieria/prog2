@@ -1,8 +1,8 @@
 Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 
 ## Ejercicios Febrero 2025
-1. [Introduction](introduction)
-2. [Composition](composition)
+1. [Introduction](exercises/introduction)
+2. [Composition](exercises/composition)
 
 [//]: # (3. [Inheritance]&#40;inheritance&#41;)
 [//]: # (4. [Collections]&#40;collections&#41;)

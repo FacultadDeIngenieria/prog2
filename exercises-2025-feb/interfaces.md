@@ -1,7 +1,7 @@
 ---
 title: Interfaces
 layout: practice
-permalink: /interfaces
+permalink: /exercises/interfaces
 ---
 
 ## Ejercicio 1

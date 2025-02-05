@@ -1,7 +1,7 @@
 ---
 title: Composición
 layout: practice
-permalink: /composition
+permalink: /exercises/composition
 ---
 
 ## Ejercicio 1

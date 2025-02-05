@@ -1,7 +1,7 @@
 ---
 title: Generics
 layout: practice
-permalink: /generics
+permalink: /exercises/generics
 ---
 
 ## Ejercicio 1
