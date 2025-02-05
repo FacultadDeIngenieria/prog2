@@ -1,7 +1,7 @@
 ---
 title: Herencia
 layout: practice
-permalink: /exercises/1
+permalink: /exercises/3
 ---
 
 ## Ejercicio 1
