@@ -1,8 +1,8 @@
 Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 
 ## Ejercicios Febrero 2025
-1. [Introduction](exercises-2025-feb/introduction.md)
-2. [Types](exercises-2025-feb)
+1. [Introduction](exercises/1)
+2. [Introduction](exercises-2025-feb/exercises/1)
 
 
 ## Presentaciones

@@ -1,3 +1,15 @@
+---
+title: Ejercicios 1
+layout: exercises
+permalink: /exercises/1
+---
+
+# Trabajo Práctico 1
+
+## Completar el trabajo práctico en GitHub Classroom
+[TP 1](https://classroom.github.com/a/7hUedGfb)
+
+
 ## Introduction
 
 > 1.Write a function which will find all such numbers which are divisible by 7 but are not a multiple of 5,
