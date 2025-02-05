@@ -1,10 +1,8 @@
 ---
-title: Ejercicios
+title: Introducción a Java
 layout: practice
 permalink: /exercises/1
 ---
-
-# 1. Introducción a Java
 
 ## Ejercicio 1
 Diseñe e implemente la clase BankAccount, la misma debe contar con los siguientes
@@ -31,8 +29,8 @@ el argumento.
 - getY(): devuelve la coordenada en Y
 
 Ayuda: Puede utilizar las siguientes funciones (más adelante veremos que son)
-Math.pow(x, y) : eleva el número x a la potencia y
-Math.sqrt(x): devuelve la raíz cuadrada de x
+- Math.pow(x, y) : eleva el número x a la potencia y 
+- Math.sqrt(x): devuelve la raíz cuadrada de x
 
 ## Ejercicio 3
 Implemente la clase círculo, que esté definida cómo un centro y un rádio. De tal manera
