@@ -1,16 +1,17 @@
 ---
 title: Collections
 layout: practice
-permalink: /exercises/collections
+permalink: /practice/collections
 ---
 
-# Trabajo Práctico 2 - Ejercicio 2 - Java Collections
-[Ejercicio 2 Fixed](https://classroom.github.com/a/D8FP7CVi)
+### Entrega opcional
+- Crear proyecto en [Github Classroom](https://classroom.github.com/a/D8FP7CVi)
 
-## 2.1 Lists
+# Lists
 
-Dado la siguiente consigna, implementar las siguientes funciones:
-* Función **index_of** que retorne el índice de la primera ocurrencia de un String dentro de una lista de Strings. En caso
+## Ejercicio 1
+
+a. Implementar una función **index_of** que retorne el índice de la primera ocurrencia de un String dentro de una lista de Strings. En caso
   de no encontrarse ninguna retorna el valor -1.
 
 ```java
@@ -22,7 +23,7 @@ System.out.println(indexOf("Blue", colors));
 // imprime: -1
 ```
 
-* Función **index_of_by_index** que retorne el índice de la primera ocurrencia de un String dentro de una lista de Strings, a partir
+b. Implementar una función **index_of_by_index** que retorne el índice de la primera ocurrencia de un String dentro de una lista de Strings, a partir
   de un índice dado, incluido en la búsqueda. En caso de no encontrarse ninguna coincidencia retorna el valor -1.
 
 ```java
@@ -36,7 +37,7 @@ System.out.println(indexOfByIndex("Green", colors, 2));
 // imprime: -1
 ```
 
-* Función **index_of_empty** que retorne el índice del primer lugar “vacío” (igual a "") en una lista de Strings. De no encontrar ninguno que retorne -1.
+c. Implementar una función **index_of_empty** que retorne el índice del primer lugar “vacío” (igual a "") en una lista de Strings. De no encontrar ninguno que retorne -1.
 
 ```java
 List<String> colors1 = List.of("Red", "Green", "White", "Black", "Pink", "Yellow", "Black");
@@ -48,7 +49,7 @@ System.out.println(indexOfEmpty(colors2));
 // imprime: 2
 ```
 
-* Función **put**, que dado un String y una lista de Strings lo coloque en el primer lugar vacío (igual a "") que encuentre y retorne
+d. Implementar una función **put**, que dado un String y una lista de Strings lo coloque en el primer lugar vacío (igual a "") que encuentre y retorne
   el índice en donde lo colocó. De no haber ningún lugar vacío debe retornar -1.
 
 ```java
@@ -61,7 +62,7 @@ System.out.println(put("Blue", colors2));
 // imprime: -1
 ```
 
-* Función **remove** que dado un String y una lista de Strings, busque el string, lo elimine si lo encuentra (lo cambia a "") y
+e. Implementar una función **remove** que dado un String y una lista de Strings, busque el string, lo elimine si lo encuentra (lo cambia a "") y
   retorne el número de eliminaciones que ha hecho.
 
 
@@ -75,7 +76,9 @@ System.out.println(remove("Blue", colors2));
 // imprime: 0
 ```
 
-## 2.2 Sets
+# Sets
+
+## Ejercicio 2
 
 Clasificar Cócteles y Mocktails.
 El evento incluirá tanto cócteles como "mocktails" - bebidas mezcladas sin alcohol.
@@ -93,7 +96,9 @@ System.out.println(checkDrinks("Shirley Tonic", Arrays.asList("cinnamon stick", 
 // Imprime: Shirley Tonic Cocktail
 ```
 
-## 2.3 Maps
+# Maps
+
+## Ejercicio 3
 
 En este ejercicio, administrarás un sistema de inventario.
 
@@ -158,27 +163,3 @@ Implementa la función `list_inventory` que toma un inventario y devuelve una li
 >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7, "silver":0})
 [('coal', 7), ('diamond', 2), ('iron', 7), ('wood', 11)]
 ```
-
-## Ejercicio 1
-Implemente el patrón **Iterador** para los elementos de la colección **Interval** implementada anteriormente.
-
-## Ejercicio 2
-Implemente el patrón **Iterador** para las colecciones **ListaArreglo** y **ListaEncadenada** que se implementaron anteriormente.
-
-## Ejercicio 3
-Agregue a las clases **ListaArreglo** y **ListaEncadenada** un método sort que ordene la lista haciendo uso del **compareTo** de los elementos. 
-
-¿Qué debe debe garantizar de los elementos que se quieran ordenar? 
-
-¿Dónde corresponde implementar correctamente este método? 
-
-_No utilizar la clase Collections. Utilice el método **BubbleSort**: https://en.wikipedia.org/wiki/Bubble_sort_
-
-## Ejercicio 4
-Sobrecargue el método **sort** con otro método que reciba un **Comparator** de tal forma que se pueda cambiar el criterio de ordenamiento.
-
-## Ejercicio 5
-Agregue un método **isSorted** que informe si la colección está ordenada o no.
-
-## Ejercicio 6
-Sobrecargue el método **isSorted** para indicar si la colección está ordenada bajo un criterio **Comparator** dado.

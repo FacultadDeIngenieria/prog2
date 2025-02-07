@@ -1,12 +1,38 @@
 Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 
-## Ejercicios Febrero 2025
-1. [Introduction](exercises/introduction)
-2. [Composition](exercises/composition)
+# Cursada intensiva - Febrero 2025
 
-[//]: # (3. [Inheritance]&#40;inheritance&#41;)
-[//]: # (4. [Collections]&#40;collections&#41;)
-[//]: # (5. [Interfaces]&#40;interfaces&#41;)
+## Clases Prácticas
+1. [Introduction](practice/introduction)
+2. [Composition](practice/composition)
+3. [Collections](practice/collections)
+4. [Inheritance](practice/inheritance)
+5. [Interfaces](practice/interfaces)
+
+## Evaluaciones
+
+### Primer Parcial
+* Jueves 13/02/2025 de 17 a 19h
+* Aula R2
+* Modalidad: presencial, escrito en papel y con apuntes.
+* Temas: 100% práctico basado en las guías 1, 2, 3, 4 y 5.
+
+### Segundo Parcial
+* Lunes 24/02/2025 de 9 a 11h
+* Aula B3
+* Modalidad: presencial, escrito en papel y con apuntes.
+* Temas: 100% práctico basado en las guías 6, 7, 8.
+
+### TP Final
+* Viernes 27/02/2025 de 9:30 a 12:30h
+* Modalidad: demo presencial con defensa oral justificando el código pusheado en el repositorio.
+* Temas: aplicar todos los conceptos vistos en clase.
+* [Enunciado](practice/tp)
+
+### Final
+* Temas: 100% teóricos.
+* Evaluado por Rodolfo Sumoza.
+
 
 ## Presentaciones
 1. [Introduction](introduction)

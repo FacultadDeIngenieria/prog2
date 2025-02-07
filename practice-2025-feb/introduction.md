@@ -1,11 +1,11 @@
 ---
 title: Introducción a Java
 layout: practice
-permalink: /exercises/introduction
+permalink: /practice/introduction
 ---
 
 ## Ejercicio 1
-Diseñe e implemente la clase Point2D, el cual debe representar un punto en el espacio
+Diseñe e implemente la clase **Point2D**, el cual debe representar un punto en el espacio
 cartesiano de dos dimensiones. Debe contar con los siguientes métodos:
 
 - getDistance(Point2D point): que indique la distancia que existe entre el punto
@@ -20,7 +20,7 @@ Ayuda: Puede utilizar las siguientes funciones (más adelante veremos que son)
 - Math.sqrt(x): devuelve la raíz cuadrada de x
 
 ## Ejercicio 2
-Implemente la clase círculo, que esté definida cómo un centro y un rádio. De tal manera
+Implemente la clase **Círculo**, que esté definida cómo un centro y un rádio. De tal manera
 que permita consultar su centro, su área e indicar su un punto está incluído en su área:
 
 - center() : obtiene el centro del círculo
@@ -29,10 +29,10 @@ que permita consultar su centro, su área e indicar su un punto está incluído 
 contenido.
 - perimeter(): devuelve el perímetro del círculo.
 
-Ayuda: Puede utilizar la constante π haciendo uso de: Math.PI
+Ayuda: Puede utilizar la constante π haciendo uso de Math.PI
 
 ## Ejercicio 3
-Implemente la clase Interval, que representa una secuencia igualmente espaciados de
+Implemente la clase **Interval**, que representa una secuencia igualmente espaciados de
 números desde el comienzo (inclusive) y hasta el final(exclusive). Debe contener los siguientes
 métodos:
 
@@ -42,7 +42,7 @@ métodos:
 - size(): devuelve la cantidad de elementos del intervalo
 
 ## Ejercicio 4
-Implemente la clase Polinomio, que representa un polinomio de grado N. Que permita
+Implemente la clase **Polinomio**, que representa un polinomio de grado N. Que permita
 setear sus coeficientes, evaluarlo para un X en particular y derivarlo.
 - setCoef(a, b): donde a es el coeficiente y b es el valor
 - evaluar(x): evalúa el polinomio en X y devuelve su valor

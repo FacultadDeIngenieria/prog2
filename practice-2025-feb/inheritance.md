@@ -1,7 +1,7 @@
 ---
 title: Herencia
 layout: practice
-permalink: /exercises/inheritance
+permalink: /practice/inheritance
 ---
 
 ## Ejercicio 1

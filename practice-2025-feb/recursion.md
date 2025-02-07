@@ -1,7 +1,7 @@
 ---
 title: Recursividad
 layout: practice
-permalink: /exercises/recursion
+permalink: /practice/recursion
 ---
 
 ## Ejercicio 1
