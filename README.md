@@ -21,17 +21,17 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 * Lunes 24/02/2025 de 9 a 11h
 * Aula B3
 * Modalidad: presencial, escrito en papel y con apuntes.
-* Temas: 100% práctico basado en las guías 6, 7, 8.
+* Temas: 100% práctico basado en las guías 6, 7, 8 y 9.
 
 ### TP Final
 * Viernes 27/02/2025 de 9:30 a 12:30h
+* Aula R2
 * Modalidad: demo presencial con defensa oral justificando el código pusheado en el repositorio.
-* Temas: aplicar todos los conceptos vistos en clase.
+* Temas: aplicar todos los conceptos **teóricos y prácticos** vistos en clase.
 * [Enunciado](practice/tp)
 
 ### Final
-* Temas: 100% teóricos.
-* Evaluado por Rodolfo Sumoza.
+* Temas: todo lo visto en las clases **teóricas con Rodolfo Sumoza**.
 
 
 ## Presentaciones
