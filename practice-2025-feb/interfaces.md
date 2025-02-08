@@ -5,7 +5,7 @@ permalink: /practice/interfaces
 ---
 
 ## Ejercicio 1
-Escriba una interface Function, que implemente un único método, evaluate de tal forma
+Escriba una interface **Function**, que implemente un único método, evaluate de tal forma
 que reciba un double y retorne un double.
 
 ```java
@@ -14,12 +14,14 @@ public interface Function {
 }
 ```
 
-De esta forma, implemente las siguientes funciones: LinealFunction, CuadraticFunction y CompoundFunction.
-Las funciones Lineal y Cuadratic deben implementar Function, lo mismo CompoundFunction. 
+De esta forma, implemente las siguientes funciones: **LinealFunction**, **CuadraticFunction** y **CompoundFunction**.
+
 Una función compuesta, es aquella cuyo resultado es el argumento de la siguiente. 
-For ejemplo, sean las funciones f y g, la función compuesta entre f y g, es f(g(x)).
+Por ejemplo, sean las funciones f y g, la función compuesta entre f y g, es f(g(x)).
+
 ¿Qué tipo de argumentos deberían tener el constructor de la función compuesta?
-2.2: Permita que la clase Polinomio desarrollada en la práctica 1, participe de este sistema.
+
+Hacer que la clase **Polinomio** desarrollada anteriormente, participe de este sistema.
 
 ## Ejercicio 2
 Agregue al **Interval** los siguientes métodos:

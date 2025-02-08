@@ -42,11 +42,3 @@ propiedades. Agregue el método **getSalary** el cual permite conocer el sueldo 
 empleado. Agregue la clase **Manager**, que también es un Empleado el cual, cobra además de
 su sueldo base, un 1% extra del sueldo de sus subordinados. Agregue un método
 **addEmployee** de tal forma de poder agregar subordinados.
-
-## Ejercicio 6
-Se desea implementar un sistema de **tarjetas de viaje**, donde cada tarjeta tiene un saldo
-que se puede cargar y a medida que se viaja se va descontando del mismo. Además, se quiere
-agregar dos tipos de tarjetas adicionales con descuento. Una para Jubilados, que tiene un 20%
-de descuento en todos los gastos, y una para estudiantes, que tiene un 80% en los dos 
-primeros viajes que realice en un día. Todas las tarjetas tienen un descubierto autorizado de
-hasta 10$, que la administración podría decidir cambiar en cualquier momento.
