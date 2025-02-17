@@ -8,6 +8,9 @@ Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
 3. [Collections](practice/collections)
 4. [Inheritance](practice/inheritance)
 5. [Interfaces](practice/interfaces)
+6. [Recursion](practice/recursion)
+7. [Generics](practice/generics)
+8. [Exceptions](practice/exceptions)
 
 ## Evaluaciones
 

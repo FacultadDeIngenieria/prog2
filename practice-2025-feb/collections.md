@@ -33,11 +33,9 @@ c. Implementar una función **indexOfEmpty** que retorne el índice del primer 
 
 ```java
 List<String> colors1 = Arrays.asList("Red", "Green", "White", "Black", "Pink", "Yellow", "Black");
-
 System.out.println(indexOfEmpty(colors1)); // imprime: -1
 
 List<String> colors2 = Arrays.asList("Red", "Green", "", "", "Pink", "", "Black");
-
 System.out.println(indexOfEmpty(colors2)); // imprime: 2
 ```
 
@@ -71,9 +69,9 @@ Clasificar Cócteles y Mocktails.
 El evento incluirá tanto cócteles como "mocktails" - bebidas mezcladas sin alcohol.
 Necesitas asegurarte de que las bebidas "mocktail" sean verdaderamente no alcohólicas y que los cócteles realmente incluyan alcohol.
 
-Implementa la función `checkDrinks` que tome el nombre de una bebida y una lista de ingredientes.
+Implementa la función **checkDrinks** que tome el nombre de una bebida y una lista de ingredientes.
 La función debería devolver el nombre de la bebida seguido de "Mocktail" si la bebida no tiene ingredientes alcohólicos, y el nombre de la bebida seguido de "Cocktail" si la bebida incluye alcohol.
-Para los propósitos de este ejercicio, los cócteles solo incluirán alcoholes del set ALCOHOLS a continuación:
+Para los propósitos de este ejercicio, los cócteles solo incluirán alcoholes del set `ALCOHOLS` a continuación:
 
 ```java
 private static final Set<String> ALCOHOLS = new HashSet<>(Arrays.asList("whiskey", "whisky", "white rum", "dark rum", "bourbon", "rye", "scotch", "vodka",
@@ -89,7 +87,7 @@ System.out.println(checkDrinks("Shirley Tonic", Arrays.asList("cinnamon stick", 
 
 # Ejercicio 3: Maps
 
-En este ejercicio, administrarás un sistema de inventario.
+En este ejercicio, administrarás un sistema de **inventario**.
 
 El inventario debe estar organizado por el nombre del artículo y debe llevar un seguimiento del número de artículos disponibles.
 
@@ -134,7 +132,7 @@ Si el artículo no se encuentra en el inventario, la función debe devolver el i
 
 ### 3.5. Devolver el contenido del inventario
 
-Implementa la función `list_inventory` que toma un inventario y devuelve una lista de tuplas `(artículo, cantidad)`. La lista solo debe incluir los artículos disponibles (con una cantidad mayor a cero):
+Implementa la función `listInventory` que toma un inventario y devuelve una lista de tuplas `(artículo, cantidad)`. La lista solo debe incluir los artículos disponibles (con una cantidad mayor a cero):
 
 ```java
     public List<Map.Entry<String, Integer>> listInventory(Map<String, Integer> inventory) {
