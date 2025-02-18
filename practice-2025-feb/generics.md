@@ -5,7 +5,7 @@ permalink: /practice/generics
 ---
 
 ## Ejercicio 1
-Implementar la clase **Bag** que guarda una colección de objetos genéricos **T**, incluso repetidos. 
+Implementar la clase **Bag<T>** que guarda una colección de objetos genéricos **T**, incluso repetidos. 
 Pero ésta, no debe guardar más de un referencia del objeto en la misma. 
 De esta forma, la colección utiliza la menor cantidad de memoria posible. 
 Para la implementación se debe cumplir con la siguiente interfaz:
@@ -33,17 +33,15 @@ public interface IBag<T> {
 
     // Devuelve un Set con los objetos sin repeticiones y 
     // filtrados de acuerdo al criterio suministrado
-    public Set<T> getElementsUniqueAndFiltered(Filter filter);
+    public Set<T> getElementsUniqueAndFiltered(Filter<T> filter);
 }
 ```
 
-## Ejercicio 2
-Implementar la clase **Filter** que se encarga de filtrar los elementos de la colección.
-Desarrollar diferentes filtros que apliquen distintos criterios de filtrado. 
-Por ejemplo, realice la clase **FilterBoolean**, **FilterGreaterThan** y **FilterEquals**
+Implementar la clase **Filter<T>** que se encarga de filtrar los elementos de tipo **T** en la colección.
+Desarrollar los filtros **FilterEquals<T>** y **FilterGreaterThan<T>** que apliquen distintos criterios de filtrado.
 
 ## Ejercicio 3
-Implementar la clase **Tupla<K, V>** que representa una tupla de dos elementos, uno de tipo **K** y otro de tipo **V**.
+Implementar la clase **Tupla<K, V>** que representa una tupla de dos elementos, uno de tipo **K** (key) y otro de tipo **V** (value).
 Realice las operaciones necesarias para poder comparar dos tuplas, que se puedan almacenar en una colección y realizar consultas.
 
 ## Ejercicio 4
