@@ -40,13 +40,52 @@ public interface IBag<T> {
 Implementar la clase **Filter<T>** que se encarga de filtrar los elementos de tipo **T** en la colección.
 Desarrollar los filtros **FilterEquals<T>** y **FilterGreaterThan<T>** que apliquen distintos criterios de filtrado.
 
-## Ejercicio 3
+## Ejercicio 2
 Implementar la clase **Tupla<K, V>** que representa una tupla de dos elementos, uno de tipo **K** (key) y otro de tipo **V** (value).
 Realice las operaciones necesarias para poder comparar dos tuplas, que se puedan almacenar en una colección y realizar consultas.
 
-## Ejercicio 4
+## Ejercicio 3
 Crea una clase Diccionario<K, V> que utilice una lista de Tupla<K, V>.
 Implementa métodos en Diccionario<K, V> para agregar pares clave-valor y buscar valores por clave.
+
+## Ejercicio 4
+Diseñanar un sistema en el cual se optimicen las lecturas de los elementos más accedidos. 
+Para esto, se debe utilizar un Cache, que es una memoria pequeña pero rápida. 
+Se pide realizar una implementación LimitedCache de la interface Cache. 
+De tal forma, que cuando el cache se llene, y se desee agregar un nuevo par, se elimine el menos consultado.
+
+```java
+public interface Cache <K, V> {
+
+    // Agrega un par Clave-Valor
+    public void add(K key, V value);
+    
+    //Devuelve el valor almacenado
+    public V get(K key);
+    
+    //Devuelve el tamaño del cache
+    public int size();
+}
+```
+
+```java
+public class TestCache {
+
+    @Test
+    public void testCache() {
+        Cache<String, String> cache = new LimitedCache<>(2);
+        cache.add("Hola", "mundo");
+        cache.add("Soy", "Diego");
+
+        assertEquals("Diego", cache.get("Soy"));
+        //Cuando llamo a cache.get("Soy") estoy haciendo que "Diego" sea el último valor consultado
+
+        cache.add("Como", "Estan"); //Se elimina "mundo" por ser el valor menos consultado y se agrega "Estan" en su lugar
+        assertNull(cache.get("Hola")); // Tira null porque "Hola" se borró del cache
+    }
+}
+```
+
 
 [//]: # (## Ejercicios adicionales)
 
