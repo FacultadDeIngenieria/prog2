@@ -1,4 +1,4 @@
-Unirse a Discord: [https://discord.gg/qXqnchCxUw](https://discord.gg/qXqnchCxUw)
+Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 
 ## Presentaciones
 1. [Introduction](introduction)
