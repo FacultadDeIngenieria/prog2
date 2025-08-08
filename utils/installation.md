@@ -35,7 +35,7 @@ Deberías ver la salida:
 
 ```Hello, World!```
 
-Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
+Esto confirma que Java 24 está correctamente instalado y funcionando en tu Mac.
 
 --- 
 
@@ -43,7 +43,7 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
 ## Java on Mac OS X
 
 1. **Descargar el JDK**:
-    - Ve a la página [AdoptOpenJDK](https://adoptopenjdk.net/).
+    - Ve a la [página de descarga de Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk22-downloads.html) o una fuente alternativa como [AdoptOpenJDK](https://adoptopenjdk.net/).
     - Descarga el instalador para macOS.
 
 2. **Instalar el JDK**:
@@ -68,7 +68,7 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
 ## Java on Windows
 
 
-### Paso 1: Descargar e Instalar Java 22
+### Paso 1: Descargar e Instalar Java 24
 
 1. **Descargar el JDK**:
     - Ve a la [página de descarga de Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk22-downloads.html) o una fuente alternativa como [AdoptOpenJDK](https://adoptopenjdk.net/).
@@ -76,14 +76,14 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
 
 2. **Instalar el JDK**:
     - Abre el archivo `.exe` descargado y sigue las instrucciones del instalador.
-    - Durante la instalación, toma nota del directorio de instalación (por ejemplo, `C:\Program Files\Java\jdk-22`).
+    - Durante la instalación, toma nota del directorio de instalación (por ejemplo, `C:\Program Files\Java\jdk-24`).
 
 ### Paso 2: Configurar Variables de Entorno
 
 1. **Configurar la variable `JAVA_HOME`**:
     - Abre el Panel de Control y ve a **Sistema y Seguridad** > **Sistema** > **Configuración avanzada del sistema**.
     - En la ventana de **Propiedades del sistema**, haz clic en **Variables de entorno**.
-    - En la sección **Variables del sistema**, haz clic en **Nuevo...** y crea una nueva variable con el nombre `JAVA_HOME` y el valor del directorio de instalación del JDK (por ejemplo, `C:\Program Files\Java\jdk-22`).
+    - En la sección **Variables del sistema**, haz clic en **Nuevo...** y crea una nueva variable con el nombre `JAVA_HOME` y el valor del directorio de instalación del JDK (por ejemplo, `C:\Program Files\Java\jdk-24`).
 
 2. **Agregar `JAVA_HOME` al `PATH`**:
     - En la sección **Variables del sistema**, encuentra la variable `Path` y selecciónala. Luego, haz clic en **Editar...**.
@@ -100,11 +100,11 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
       ```sh
       java -version
       ```
-    - Deberías ver la versión de Java instalada, confirmando que Java 22 está correctamente configurado.
+    - Deberías ver la versión de Java instalada, confirmando que Java 24 está correctamente configurado.
 
 ## Java on Linux
 
-### Paso 1: Descargar e Instalar Java 22
+### Paso 1: Descargar e Instalar Java 24
 
 1. **Descargar el JDK**:
     - Ve a la página [AdoptOpenJDK](https://adoptopenjdk.net/).
@@ -114,11 +114,11 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
     - Abre una terminal y navega al directorio donde descargaste el archivo.
     - Extrae el tarball:
       ```sh
-      tar -xzf jdk-22_linux-x64_bin.tar.gz
+      tar -xzf jdk-24_linux-x64_bin.tar.gz
       ```
     - Mueve el JDK al directorio `/opt`:
       ```sh
-      sudo mv jdk-22 /opt/
+      sudo mv jdk-24 /opt/
       ```
 
 ### Paso 2: Configurar Variables de Entorno
@@ -127,7 +127,7 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
     - Abre el archivo de configuración de tu shell (por ejemplo, `~/.bashrc` o `~/.zshrc`) en un editor de texto.
     - Añade las siguientes líneas al final del archivo:
       ```sh
-      export JAVA_HOME=/opt/jdk-22
+      export JAVA_HOME=/opt/jdk-24
       export PATH=$JAVA_HOME/bin:$PATH
       ```
     - Guarda y cierra el archivo.
@@ -143,7 +143,7 @@ Esto confirma que Java 22 está correctamente instalado y funcionando en tu Mac.
       ```sh
       java -version
       ```
-    - Deberías ver la versión de Java instalada, confirmando que Java 22 está correctamente configurado.
+    - Deberías ver la versión de Java instalada, confirmando que Java 24 está correctamente configurado.
 
 
 ---
