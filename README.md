@@ -5,7 +5,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 2. [Types](types)
 3. [Types in python](types-in-python)
 
-[//]: # (4. [Java Collections]&#40;java-collections&#41;)
+4. [Java Collections](java-collections)
 
 [//]: # (5. [TDD]&#40;tdd&#41;)
 
