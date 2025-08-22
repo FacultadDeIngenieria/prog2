@@ -29,7 +29,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 
 
 ## Trabajos Prácticos
-1. [TP1](https://classroom.github.com/a/7dpon_iV)
+1. [TP1](practice/1)
 
 [//]: # (2. [TP2]&#40;practice/2&#41;)
 
