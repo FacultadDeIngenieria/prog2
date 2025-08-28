@@ -7,7 +7,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 
 4. [Java Collections](java-collections)
 
-[//]: # (5. [TDD]&#40;tdd&#41;)
+5. [TDD](tdd)
 
 [//]: # (6. [Recursion]&#40;recursion&#41;)
 
