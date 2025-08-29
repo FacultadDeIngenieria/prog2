@@ -30,6 +30,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 
 ## Trabajos Prácticos
 1. [TP1](practice/1)
+1. [TP2](practice/2)
 
 [//]: # (2. [TP2]&#40;practice/2&#41;)
 
