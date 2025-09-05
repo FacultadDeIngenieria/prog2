@@ -4,12 +4,9 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 1. [Introduction](introduction)
 2. [Types](types)
 3. [Types in python](types-in-python)
-
 4. [Java Collections](java-collections)
-
 5. [TDD](tdd)
-
-[//]: # (6. [Recursion]&#40;recursion&#41;)
+6. [Recursion](recursion)
 
 [//]: # (7. [Object-Oriented Programming &#40;OOP&#41;]&#40;oop&#41;)
 
