@@ -7,8 +7,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 4. [Java Collections](java-collections)
 5. [TDD](tdd)
 6. [Recursion](recursion)
-
-[//]: # (7. [Object-Oriented Programming &#40;OOP&#41;]&#40;oop&#41;)
+7. [Object-Oriented Programming (OOP)](oop)
 
 [//]: # (8. [Classes]&#40;classes&#41;)
 
