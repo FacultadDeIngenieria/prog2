@@ -4,8 +4,7 @@ layout: practice
 permalink: /practice/4
 ---
 
-# TP 4
+# Trabajo Práctico 4 - OOP
 
-[OOP Python](https://classroom.github.com/a/vqi4k80t)
+[TP4](https://classroom.github.com/a/aBXNvxE3)
 
-[OOP Java](https://classroom.github.com/a/RFlVqwwp)
