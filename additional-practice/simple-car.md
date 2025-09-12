@@ -1,7 +1,7 @@
 ---
 title: Ejercicio adicional 1.2
 layout: practice
-permalink: /additional-practice/1.2
+permalink: /additional-practice/simple-car
 ---
 
 
