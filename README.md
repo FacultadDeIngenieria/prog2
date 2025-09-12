@@ -39,6 +39,6 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 
 ## Ejercicios adicionales
 1. Objetos:
-   1. [Quadratic](additional-practice/eq-snd-grade.md)
-   2. [Cars](additional-practice/simple-car.md) 
+   1. [Quadratic](additional-practice/eq-snd-grade)
+   2. [Cars](additional-practice/simple-car) 
 
