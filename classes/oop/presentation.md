@@ -9,8 +9,6 @@ class: center, middle, inverse
 1. What is Object-Oriented Programming?
 
 2. History
-   
-[//]: # (3. Classes in Python)
 
 3. Classes in Java
 
@@ -57,71 +55,66 @@ This approach also helps in managing and maintaining large codebases more effect
 - **1990s and 2000s:** Java and C# dominate object-oriented development.
 - **Present:** OOP remains one of the most widely used paradigms.
 
+<!---
+## Defining Classes in Python
+
+```python
+
+class Person:
+
+    def __init__(self, name: str, age: int) -> None:
+
+        self.name : str = name
+
+        self.age : int = age
+
+    
+    def greet(self) -> str:
+
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+
+```
+
+
+In Python, the **__ init __** method is a special method used for initializing a new instance of a class.
+
+It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.
+
+
+Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.
+
+Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.
+
 ---
 
-[//]: # (## Defining Classes in Python)
+## Instantiating Classes in Python
 
-[//]: # ()
-[//]: # (```python)
 
-[//]: # (class Person:)
+```python
 
-[//]: # (    def __init__&#40;self, name: str, age: int&#41; -> None:)
+# Instantiation of Person
 
-[//]: # (        self.name : str = name)
+matias : Person = Person(name="Matias", age=29)
 
-[//]: # (        self.age : int = age)
 
-[//]: # (    )
-[//]: # (    def greet&#40;self&#41; -> str:)
+# Using the greet method
 
-[//]: # (        return f"Hello, my name is {self.name} and I am {self.age} years old.")
+greeting : str = matias.greet()
 
-[//]: # (```)
+print(greeting)
 
-[//]: # ()
-[//]: # (In Python, the **__ init __** method is a special method used for initializing a new instance of a class.)
+```
 
-[//]: # (It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.)
 
-[//]: # ()
-[//]: # (Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.)
+**matias = Person(name="Matias", age=29)** creates a new instance of the Person class.
 
-[//]: # (Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.)
+**greeting = matias.greet()** calls the greet method on the **matias** instance.
 
-[//]: # ()
-[//]: # (---)
+This method returns a string with the person's name and age, which is then stored in the greeting variable.
+-->
 
-[//]: # ()
-[//]: # (## Instantiating Classes in Python)
 
-[//]: # ()
-[//]: # (```python)
-
-[//]: # (# Instantiation of Person)
-
-[//]: # (matias : Person = Person&#40;name="Matias", age=29&#41;)
-
-[//]: # ()
-[//]: # (# Using the greet method)
-
-[//]: # (greeting : str = matias.greet&#40;&#41;)
-
-[//]: # (print&#40;greeting&#41;)
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # (**matias = Person&#40;name="Matias", age=29&#41;** creates a new instance of the Person class.)
-
-[//]: # ()
-[//]: # ()
-[//]: # (**greeting = matias.greet&#40;&#41;** calls the greet method on the **matias** instance.)
-
-[//]: # ()
-[//]: # ()
-[//]: # (This method returns a string with the person's name and age, which is then stored in the greeting variable.)
-
+---
 
 ## Defining Classes in Java
 
