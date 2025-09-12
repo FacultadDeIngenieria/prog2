@@ -218,25 +218,36 @@ protected void setName(String name)    // student.setName("Diego")
 protected String name;                 // student.name 
 ```
 
----
+[//]: # (---)
 
-## Access modifiers in Python
+[//]: # (## Access modifiers in Python)
 
-By default, all the variables and methods in a Python class are public.
+[//]: # ()
+[//]: # (By default, all the variables and methods in a Python class are public.)
 
-Make age private and salary as protected by prefixing double and single underscores respectively.
-```python 
-class Employee:
+[//]: # ()
+[//]: # (Make age private and salary as protected by prefixing double and single underscores respectively.)
 
-   def __init__(self, name, age, salary):
-      self.name = name # public variable
-      self.__age = age # private variable
-      self._salary = salary # protected variable
-   
-   def displayEmployee(self):
-      print ("Name : ", self.name, ", age: ", self.__age, ", salary: ", self._salary)
- 
-```
+[//]: # (```python )
+
+[//]: # (class Employee:)
+
+[//]: # ()
+[//]: # (   def __init__&#40;self, name, age, salary&#41;:)
+
+[//]: # (      self.name = name # public variable)
+
+[//]: # (      self.__age = age # private variable)
+
+[//]: # (      self._salary = salary # protected variable)
+
+[//]: # (   )
+[//]: # (   def displayEmployee&#40;self&#41;:)
+
+[//]: # (      print &#40;"Name : ", self.name, ", age: ", self.__age, ", salary: ", self._salary&#41;)
+
+[//]: # ( )
+[//]: # (```)
 
 ---
 
@@ -364,8 +375,8 @@ public class Book {
 public class Main {
     public static void main(String[] args) {
         
-        Book a = new Book("Juan Cortaba Manzanas", new Author("Juan Martín"), 2010);
-        Book b = new Book("Juan Cortaba Manzanas", new Author("Juan Martín"), 2010);
+        Book a = new Book("Programming", new Author("Juan Perez"), 2010);
+        Book b = new Book("Programming", new Author("Juan Perez"), 2010);
         
         
         System.out.println(a.equals(b)); //True
@@ -394,9 +405,9 @@ public Complex(float real, float imaginary);
 public Complex(float real);  //imaginary = 0
 ```
 
-### In Python
-Python is a dynamically typed language, so the concept of overloading simply does not apply to it. 
-Python cannot select among the alternatives because it cannot discriminate data types at compile-time.
+[//]: # (### In Python)
+[//]: # (Python is a dynamically typed language, so the concept of overloading simply does not apply to it. )
+[//]: # (Python cannot select among the alternatives because it cannot discriminate data types at compile-time.)
 
 [//]: # (However, we can create such alternative functions at run-time with _multimethods or multiple dispatch._)
 

@@ -57,46 +57,70 @@ This approach also helps in managing and maintaining large codebases more effect
 - **1990s and 2000s:** Java and C# dominate object-oriented development.
 - **Present:** OOP remains one of the most widely used paradigms.
 
----
+[//]: # (---)
 
-## Defining Classes in Python
+[//]: # (## Defining Classes in Python)
 
-```python
-class Person:
-    def __init__(self, name: str, age: int) -> None:
-        self.name : str = name
-        self.age : int = age
-    
-    def greet(self) -> str:
-        return f"Hello, my name is {self.name} and I am {self.age} years old."
-```
+[//]: # ()
+[//]: # (```python)
 
-In Python, the **__ init __** method is a special method used for initializing a new instance of a class.
-It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.
+[//]: # (class Person:)
 
-Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.
-Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.
+[//]: # (    def __init__&#40;self, name: str, age: int&#41; -> None:)
 
----
+[//]: # (        self.name : str = name)
 
-## Instantiating Classes in Python
+[//]: # (        self.age : int = age)
 
-```python
-# Instantiation of Person
-matias : Person = Person(name="Matias", age=29)
+[//]: # (    )
+[//]: # (    def greet&#40;self&#41; -> str:)
 
-# Using the greet method
-greeting : str = matias.greet()
-print(greeting)
-```
+[//]: # (        return f"Hello, my name is {self.name} and I am {self.age} years old.")
 
-**matias = Person(name="Matias", age=29)** creates a new instance of the Person class.
+[//]: # (```)
 
+[//]: # ()
+[//]: # (In Python, the **__ init __** method is a special method used for initializing a new instance of a class.)
 
-**greeting = matias.greet()** calls the greet method on the **matias** instance.
+[//]: # (It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.)
 
+[//]: # ()
+[//]: # (Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.)
 
-This method returns a string with the person's name and age, which is then stored in the greeting variable.
+[//]: # (Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.)
+
+[//]: # ()
+[//]: # (---)
+
+[//]: # ()
+[//]: # (## Instantiating Classes in Python)
+
+[//]: # ()
+[//]: # (```python)
+
+[//]: # (# Instantiation of Person)
+
+[//]: # (matias : Person = Person&#40;name="Matias", age=29&#41;)
+
+[//]: # ()
+[//]: # (# Using the greet method)
+
+[//]: # (greeting : str = matias.greet&#40;&#41;)
+
+[//]: # (print&#40;greeting&#41;)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (**matias = Person&#40;name="Matias", age=29&#41;** creates a new instance of the Person class.)
+
+[//]: # ()
+[//]: # ()
+[//]: # (**greeting = matias.greet&#40;&#41;** calls the greet method on the **matias** instance.)
+
+[//]: # ()
+[//]: # ()
+[//]: # (This method returns a string with the person's name and age, which is then stored in the greeting variable.)
 
 ---
 
@@ -152,9 +176,9 @@ public class Main {
 
 ## Principles:
 
-   1. Inheritance
+   1. Encapsulation
    
-   2. Encapsulation
+   2. Inheritance
 
    3. Abstraction
 
@@ -177,49 +201,143 @@ By hiding implementation details, encapsulation allows the internal implementati
 
 ## Principles - Encapsulation - Class Example
 
-```python
-class Person:
-    def __init__(self, name: str, age: int) -> None:
-        self.__name: str = name  # private attribute
-        self.__age: int = age    # private attribute
+```java
+public class Person {
+    
+    // Atributos privados
+    private String name;
+    private int age;
 
-    # Public method to access private attribute
-    def get_name(self) -> str:
-        return self.__name
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-    # Public method to modify private attribute
-    def set_name(self, name) -> None:
-        self.__name: str = name
+    // Getter para name
+    public String getName() {
+        return name;
+    }
 
-    # Public method to access private attribute
-    def get_age(self) -> int:
-        return self.__age
+    // Setter para name
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    # Public method to modify private attribute
-    def set_age(self, age) -> None:
-        if age > 0:
-            self.__age: int = age
-        else:
-            print("Invalid age")
+    // Getter para age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter para age con validación
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age");
+        }
+    }
+}
 ```
+
+[//]: # (```python)
+
+[//]: # (class Person:)
+
+[//]: # (    def __init__&#40;self, name: str, age: int&#41; -> None:)
+
+[//]: # (        self.__name: str = name  # private attribute)
+
+[//]: # (        self.__age: int = age    # private attribute)
+
+[//]: # ()
+[//]: # (    # Public method to access private attribute)
+
+[//]: # (    def get_name&#40;self&#41; -> str:)
+
+[//]: # (        return self.__name)
+
+[//]: # ()
+[//]: # (    # Public method to modify private attribute)
+
+[//]: # (    def set_name&#40;self, name&#41; -> None:)
+
+[//]: # (        self.__name: str = name)
+
+[//]: # ()
+[//]: # (    # Public method to access private attribute)
+
+[//]: # (    def get_age&#40;self&#41; -> int:)
+
+[//]: # (        return self.__age)
+
+[//]: # ()
+[//]: # (    # Public method to modify private attribute)
+
+[//]: # (    def set_age&#40;self, age&#41; -> None:)
+
+[//]: # (        if age > 0:)
+
+[//]: # (            self.__age: int = age)
+
+[//]: # (        else:)
+
+[//]: # (            print&#40;"Invalid age"&#41;)
+
+[//]: # (```)
 
 ---
 
 ## Principles - Encapsulation - Usage Example
 
-```python
-person: Person = Person("John Doe", 30)
-print(person.get_name())  # Access private attribute through a public method - "John Doe"
-print(person.get_age())   # Access private attribute through a public method - 30
-person.set_age(31)        # Modify private attribute through a public method -
-print(person.get_age())   # Verify the change                                - 31
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Crear objeto Person
+        Person person = new Person("John Doe", 30);
+
+        // Acceder a los atributos privados a través de getters
+        System.out.println(person.getName()); // "John Doe"
+        System.out.println(person.getAge());  // 30
+
+        // Modificar atributos privados a través de setters
+        person.setAge(31);
+
+        // Verificar el cambio
+        System.out.println(person.getAge());  // 31
+    }
+}
 ```
 
-**Private Attributes:** The attributes **__name** and **__age** are private ( in Python this is indicated by the double underscores **__** )
+**Private Attributes:** The attributes **name** and **age** are private
 This means they cannot be accessed directly from outside the class.
 
-**Getter and Setter Methods:** The class provides **get_name**, **set_name**, **get_age**, and **set_age** methods to access and modify the private attributes.
+**Getter and Setter Methods:** The class provides **getName**, **setName**, **getAge**, and **setAge** methods to access and modify the private attributes.
 These methods ensure that the data is validated before any changes are made (e.g., age cannot be negative).
+
+
+[//]: # (```python)
+
+[//]: # (person: Person = Person&#40;"John Doe", 30&#41;)
+
+[//]: # (print&#40;person.get_name&#40;&#41;&#41;  # Access private attribute through a public method - "John Doe")
+
+[//]: # (print&#40;person.get_age&#40;&#41;&#41;   # Access private attribute through a public method - 30)
+
+[//]: # (person.set_age&#40;31&#41;        # Modify private attribute through a public method -)
+
+[//]: # (print&#40;person.get_age&#40;&#41;&#41;   # Verify the change                                - 31)
+
+[//]: # (```)
+
+[//]: # (**Private Attributes:** The attributes **__name** and **__age** are private &#40; in Python this is indicated by the double underscores **__** &#41;)
+
+[//]: # (This means they cannot be accessed directly from outside the class.)
+
+[//]: # ()
+[//]: # (**Getter and Setter Methods:** The class provides **get_name**, **set_name**, **get_age**, and **set_age** methods to access and modify the private attributes.)
+
+[//]: # (These methods ensure that the data is validated before any changes are made &#40;e.g., age cannot be negative&#41;.)
 
 ---
 
@@ -230,51 +348,145 @@ Ability to create new classes based on existing ones.
 
 This allows a new class to inherit properties and methods from an existing class. This promotes code reuse and helps in creating a hierarchical relationship between classes.
 
-```python
-class Animal:
-    def __init__(self, name: str, species: str) -> None:
-        self.name: str = name
-        self.species: str = species
+```java
+public class Animal {
+    
+    // Attributes
+    protected String name;
+    protected String species;
 
-    def make_sound(self) -> str:
-        return "Some generic sound"
+    // Constructor
+    public Animal(String name, String species) {
+        this.name = name;
+        this.species = species;
+    }
 
-    def describe(self) -> str:
-        return f"{self.name} is a {self.species}"
+    // Method
+    public String makeSound() {
+        return "Some generic sound";
+    }
+
+    // Method
+    public String describe() {
+        return name + " is a " + species;
+    }
+}
 ```
-**Animal** is a Base Class that contains attributes name and species and methods like **make_sound()** and **describe()**.
- This class provides basic functionality common to all animals.
+
+**Animal** is a Base Class that contains attributes name and species and methods like **makeSound()** and **describe()**.
+This class provides basic functionality common to all animals.
+
+[//]: # (```python)
+
+[//]: # (class Animal:)
+
+[//]: # (    def __init__&#40;self, name: str, species: str&#41; -> None:)
+
+[//]: # (        self.name: str = name)
+
+[//]: # (        self.species: str = species)
+
+[//]: # ()
+[//]: # (    def make_sound&#40;self&#41; -> str:)
+
+[//]: # (        return "Some generic sound")
+
+[//]: # ()
+[//]: # (    def describe&#40;self&#41; -> str:)
+
+[//]: # (        return f"{self.name} is a {self.species}")
+
+[//]: # (```)
 
 ---
 
 ## Principles - Inheritance - Subclasses
 
-```python
-class Dog(Animal):
-    def __init__(self, name: str, breed: str) -> None:
-        super().__init__(name, "Dog")
-        self.breed: str = breed
+```java
+// Subclass Dog
+public class Dog extends Animal {
+    
+    private String breed;
 
-    def make_sound(self) -> str:
-        return "Woof!"
+    public Dog(String name, String breed) {
+        super(name, "Dog"); // Call the Animal constructor
+        this.breed = breed;
+    }
 
-    def fetch(self) -> str:
-        return f"{self.name} is fetching the ball"
+    @Override
+    public String makeSound() {
+        return "Woof!";
+    }
 
-class Cat(Animal):
-    def __init__(self, name: str, color: str) -> None:
-        super().__init__(name, "Cat")
-        self.color: str = color
+    public String fetch() {
+        return name + " is fetching the ball";
+    }
+}
 
-    def make_sound(self) -> str:
-        return "Meow!"
+// Subclass Cat
+public class Cat extends Animal {
+    
+    private String color;
 
-    def climb(self) -> str:
-        return f"{self.name} is climbing a tree"
+    public Cat(String name, String color) {
+        super(name, "Cat"); // Call the Animal constructor
+        this.color = color;
+    }
 
+    @Override
+    public String makeSound() {
+        return "Meow!";
+    }
+
+    public String climb() {
+        return name + " is climbing a tree";
+    }
+}
 ```
-**Dog** is a subclass that inherits from **Animal**. It overrides the **make_sound()** method and adds a new attribute **breed** and a new method **fetch()**.
-**Cat** subclass inherits from **Animal**, overrides the **make_sound()** method, and adds a new attribute **color** and a new method **climb()**.
+
+**Dog** is a subclass that inherits from **Animal**. It overrides the **makeSound()** method and adds a new attribute **breed** and a new method **fetch()**.
+**Cat** subclass inherits from **Animal**, overrides the **makeSound()** method, and adds a new attribute **color** and a new method **climb()**.
+
+[//]: # (```python)
+
+[//]: # (class Dog&#40;Animal&#41;:)
+
+[//]: # (    def __init__&#40;self, name: str, breed: str&#41; -> None:)
+
+[//]: # (        super&#40;&#41;.__init__&#40;name, "Dog"&#41;)
+
+[//]: # (        self.breed: str = breed)
+
+[//]: # ()
+[//]: # (    def make_sound&#40;self&#41; -> str:)
+
+[//]: # (        return "Woof!")
+
+[//]: # ()
+[//]: # (    def fetch&#40;self&#41; -> str:)
+
+[//]: # (        return f"{self.name} is fetching the ball")
+
+[//]: # ()
+[//]: # (class Cat&#40;Animal&#41;:)
+
+[//]: # (    def __init__&#40;self, name: str, color: str&#41; -> None:)
+
+[//]: # (        super&#40;&#41;.__init__&#40;name, "Cat"&#41;)
+
+[//]: # (        self.color: str = color)
+
+[//]: # ()
+[//]: # (    def make_sound&#40;self&#41; -> str:)
+
+[//]: # (        return "Meow!")
+
+[//]: # ()
+[//]: # (    def climb&#40;self&#41; -> str:)
+
+[//]: # (        return f"{self.name} is climbing a tree")
+
+[//]: # (```)
 
 ---
 
@@ -283,34 +495,76 @@ class Cat(Animal):
 Hiding internal details and exposing functionalities.
 It allows you to define a common interface for a set of related objects without exposing the underlying complexities.
 
-```python
-# Pseudocode
-class Animal():
-    def make_sound():
-        pass
-
+```java
+// Abstract base class
+public abstract class Animal {
+    
+    // Abstract method (no implementation here)
+    public abstract String makeSound();
+}
 ```
 
 **Animal** class is an abstract base class.
 
-It contains an abstract method **make_sound()**, which means that any subclass must implement this method.
+It contains an abstract method **makeSound()**, which means that any subclass must implement this method.
+
+[//]: # (```python)
+
+[//]: # (# Pseudocode)
+
+[//]: # (class Animal&#40;&#41;:)
+
+[//]: # (    def make_sound&#40;&#41;:)
+
+[//]: # (        pass)
+
+[//]: # (```)
 
 ---
 
 ## Principles - Abstraction - Example
 
-```python
-# Pseudocode
-class Dog(Animal):
-    def make_sound():
-        return "Woof!"
+```java
+// Subclass Dog
+public class Dog extends Animal { 
+    
+    @Override
+    public String makeSound() {
+        return "Woof!";
+    }
+}
 
-class Cat(Animal):
-    def make_sound():
-        return "Meow!"
-
+// Subclass Cat
+public class Cat extends Animal { 
+    
+    @Override 
+    public String makeSound() {
+        return "Meow!";
+    }
+}
 ```
-Both **Dog** and **Cat** are concrete classes and inherit from Animal and implement the **make_sound()** method. Each class provides its specific implementation.
+
+Both **Dog** and **Cat** are concrete classes and inherit from Animal and implement the **makeSound()** method. 
+Each class provides its specific implementation.
+
+[//]: # (```python)
+
+[//]: # (# Pseudocode)
+
+[//]: # (class Dog&#40;Animal&#41;:)
+
+[//]: # (    def make_sound&#40;&#41;:)
+
+[//]: # (        return "Woof!")
+
+[//]: # ()
+[//]: # (class Cat&#40;Animal&#41;:)
+
+[//]: # (    def make_sound&#40;&#41;:)
+
+[//]: # (        return "Meow!")
+
+[//]: # (```)
 
 ---
 
@@ -320,25 +574,80 @@ Objects of different classes can be treated as objects of a common superclass. I
 
 In simpler terms, polymorphism means "many shapes," and it allows methods to do different things based on the object they're acting upon.
 
-```python
-# Including Animal, Dog and Cat classes.
-class Bird(Animal):
-    def __init__(self, name: str, color: str) -> None:
-        super().__init__(name, "Bird")
-        self.color: str = color
+```java
+public class Bird extends Animal {
+    
+    private String color;
 
-    def make_sound(self) -> str:
-        return "Chirp!"
+    public Bird(String name, String color) {
+        super(name, "Bird");
+        this.color = color;
+    }
 
-# Outside these Animal classes. Example usage:
-def animal_sound(animal: Animal) -> str:
-    print(f"{animal.describe()} It says: {animal.make_sound()}")
- 
-animals : List[Animal]= [Dog("Buddy"), Cat("Whiskers"), Bird("Tweety")]
-
-for animal in animals:
-    animal_sound(animal)
+    @Override
+    public String makeSound() {
+        return "Chirp!";
+    }
+}
 ```
+
+[//]: # (```python)
+
+[//]: # (# Including Animal, Dog and Cat classes.)
+
+[//]: # (class Bird&#40;Animal&#41;:)
+
+[//]: # (    def __init__&#40;self, name: str, color: str&#41; -> None:)
+
+[//]: # (        super&#40;&#41;.__init__&#40;name, "Bird"&#41;)
+
+[//]: # (        self.color: str = color)
+
+[//]: # ()
+[//]: # (    def make_sound&#40;self&#41; -> str:)
+
+[//]: # (        return "Chirp!")
+
+[//]: # ()
+[//]: # (# Outside these Animal classes. Example usage:)
+
+[//]: # (def animal_sound&#40;animal: Animal&#41; -> str:)
+
+[//]: # (    print&#40;f"{animal.describe&#40;&#41;} It says: {animal.make_sound&#40;&#41;}"&#41;)
+
+[//]: # ( )
+[//]: # (animals : List[Animal]= [Dog&#40;"Buddy"&#41;, Cat&#40;"Whiskers"&#41;, Bird&#40;"Tweety"&#41;])
+
+[//]: # ()
+[//]: # (for animal in animals:)
+
+[//]: # (    animal_sound&#40;animal&#41;)
+
+[//]: # (```)
+
+---
+
+## Principles - Polymorphism - Example
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog("Buddy");
+        Animal myCat = new Cat("Whiskers");
+        Animal myBird = new Bird("Tweety");
+
+        Lists<Animal> animals = new ArrayList<>();
+        animals.add(myDog);
+        animals.add(myCat);
+        animals.add(myBird);
+        
+        for (Animal animal : animals) {
+            System.out.println(animal.describe() + " It says: " + animal.makeSound());
+        }
+    }
+}
+```
+
 ---
 
 ## Conclusion

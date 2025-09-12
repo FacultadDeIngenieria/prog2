@@ -7,12 +7,18 @@ class: center, middle, inverse
 ## Agenda
 
 1. What is polymorphism?
+
 2. Inheritance vs Polymorphism
-3. Polymorphism in Python
-4. Polymorphism in Java
-5. What are interfaces?
-6. Interfaces in Python
-7. Interfaces in Java
+
+[//]: # (3. Polymorphism in Python)
+
+3. Polymorphism examples in Java
+
+4. What are interfaces?
+
+[//]: # (6. Interfaces in Python)
+
+5Interface examples in Java
 
 ---
 
@@ -20,12 +26,14 @@ class: center, middle, inverse
 
 - Polymorphism is the ability of an object to take on many forms, or the ability to send
 the same message to different objects and get different behaviors.
+
 - Polymorphism is often expressed as "one interface, many implementations".
+
 - Polymorphism can be achieved by using inheritance and interfaces. (we are going to define interfaces later)
 
 ---
 
-## Polymorphism in Java, with inheritance
+## Polymorphism in Java
 
 ```java
 
@@ -34,8 +42,6 @@ abstract class PaymentMethod {
 }
 
 ```
-
----
 
 ```java
 
@@ -55,7 +61,6 @@ class CreditCard extends PaymentMethod {
 ---
 
 ```java
-
 class Cash extends PaymentMethod {
     float charge(float amount) {
         System.out.println("Charging " + amount + " with Cash");
@@ -66,14 +71,9 @@ class Cash extends PaymentMethod {
         return amount;
     }
 }
-
-
 ```
 
----
-
 ```java
-
 class CriptoCurrency extends PaymentMethod {
     float charge(float amount) {
         System.out.println("Charging " + amount + " with CriptoCurrency");
@@ -84,9 +84,7 @@ class CriptoCurrency extends PaymentMethod {
         return amount;
     }
 }
-
 ```
-
 
 ---
 
@@ -110,86 +108,136 @@ class ShoppingCart {
 
 ```
 
----
+[//]: # (---)
 
-## Polymorphism in Python
+[//]: # ()
+[//]: # (## Polymorphism in Python)
 
-```python
+[//]: # ()
+[//]: # (```python)
 
-class Notification:
-    def send(self, user: User, message: Message) -> bool:
-        pass
+[//]: # ()
+[//]: # (class Notification:)
 
-```
+[//]: # (    def send&#40;self, user: User, message: Message&#41; -> bool:)
 
----
+[//]: # (        pass)
 
-```python
+[//]: # ()
+[//]: # (```)
 
-class EmailNotification(Notification):
-    def send(self, user: User, message: Message) -> bool:
-        print(f"Sending email to {user.email} with message {message.text}")
-        // validate the email
-        // reach out to the email server
-        // wait until the email server responds
-        // returns whether the email was sent
-        return True
+[//]: # ()
+[//]: # (---)
 
-```
+[//]: # ()
+[//]: # (```python)
 
----
+[//]: # ()
+[//]: # (class EmailNotification&#40;Notification&#41;:)
 
-```python
+[//]: # (    def send&#40;self, user: User, message: Message&#41; -> bool:)
 
-class SmsNotification(Notification):
-    def send(self, user: User, message: Message) -> bool:
-        print(f"Sending SMS to {user.phone} with message {message.text}")
-        // validate the phone number
-        // reach out to the SMS server
-        // wait until the SMS server responds
-        // returns whether the SMS was sent
-        return True
+[//]: # (        print&#40;f"Sending email to {user.email} with message {message.text}"&#41;)
 
-```
+[//]: # (        // validate the email)
 
----
+[//]: # (        // reach out to the email server)
 
-```python
+[//]: # (        // wait until the email server responds)
 
-class PushNotification(Notification):
-    def send(self, user: User, message: Message) -> bool:
-        print(f"Sending push notification to {user.device} with message {message.text}")
-        // validate the device
-        // reach out to the push notification server
-        // wait until the push notification server responds
-        // returns whether the push notification was sent
-        return True
+[//]: # (        // returns whether the email was sent)
 
-```
+[//]: # (        return True)
 
----
+[//]: # ()
+[//]: # (```)
 
-## How do we use polymorphism?
+[//]: # ()
+[//]: # (---)
 
-```python
+[//]: # ()
+[//]: # (```python)
 
-class OTPService:
-    notification: Notification
+[//]: # ()
+[//]: # (class SmsNotification&#40;Notification&#41;:)
 
-    def set_notification(self, notification: Notification):
-        self.notification = notification
+[//]: # (    def send&#40;self, user: User, message: Message&#41; -> bool:)
 
-    def send_otp(self, user: User) -> bool:
-        otp = generate_otp()
-        return self.notification.send(user, Message(otp))
+[//]: # (        print&#40;f"Sending SMS to {user.phone} with message {message.text}"&#41;)
 
-```
+[//]: # (        // validate the phone number)
+
+[//]: # (        // reach out to the SMS server)
+
+[//]: # (        // wait until the SMS server responds)
+
+[//]: # (        // returns whether the SMS was sent)
+
+[//]: # (        return True)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # ()
+[//]: # (---)
+
+[//]: # ()
+[//]: # (```python)
+
+[//]: # ()
+[//]: # (class PushNotification&#40;Notification&#41;:)
+
+[//]: # (    def send&#40;self, user: User, message: Message&#41; -> bool:)
+
+[//]: # (        print&#40;f"Sending push notification to {user.device} with message {message.text}"&#41;)
+
+[//]: # (        // validate the device)
+
+[//]: # (        // reach out to the push notification server)
+
+[//]: # (        // wait until the push notification server responds)
+
+[//]: # (        // returns whether the push notification was sent)
+
+[//]: # (        return True)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (---)
+
+[//]: # ()
+[//]: # (## How do we use polymorphism?)
+
+[//]: # ()
+[//]: # (```python)
+
+[//]: # ()
+[//]: # (class OTPService:)
+
+[//]: # (    notification: Notification)
+
+[//]: # ()
+[//]: # (    def set_notification&#40;self, notification: Notification&#41;:)
+
+[//]: # (        self.notification = notification)
+
+[//]: # ()
+[//]: # (    def send_otp&#40;self, user: User&#41; -> bool:)
+
+[//]: # (        otp = generate_otp&#40;&#41;)
+
+[//]: # (        return self.notification.send&#40;user, Message&#40;otp&#41;&#41;)
+
+[//]: # ()
+[//]: # (```)
 
 ---
 
 ## What are interfaces?
 
 - An interface is a contract that defines the methods that a class must implement.
+
 - An interface is a reference type in Java, similar to a class, that can contain
 only constants, method signatures, default methods, static methods, and nested types.
 

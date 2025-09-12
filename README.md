@@ -8,8 +8,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 5. [TDD](tdd)
 6. [Recursion](recursion)
 7. [Object-Oriented Programming (OOP)](oop)
-
-[//]: # (8. [Classes]&#40;classes&#41;)
+8. [Classes](classes)
 
 [//]: # (9. [Abstract Classes & Inheritance]&#40;abstract&#41;)
 
