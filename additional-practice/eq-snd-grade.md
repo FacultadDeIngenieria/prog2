@@ -1,7 +1,7 @@
 ---
 title: Ejercicio adicional 1.1
 layout: practice
-permalink: /additional-practice/1.1
+permalink: /additional-practice/eq-snd-grade
 ---
 
 # Types
