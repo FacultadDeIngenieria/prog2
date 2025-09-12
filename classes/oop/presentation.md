@@ -10,13 +10,13 @@ class: center, middle, inverse
 
 2. History
    
-3. Classes in Python
+[//]: # (3. Classes in Python)
 
-4. Classes in Java
+3. Classes in Java
 
-5. Principles
+4. Principles
 
-6. Conclusion
+5. Conclusion
 
 ---
 
@@ -57,7 +57,7 @@ This approach also helps in managing and maintaining large codebases more effect
 - **1990s and 2000s:** Java and C# dominate object-oriented development.
 - **Present:** OOP remains one of the most widely used paradigms.
 
-[//]: # (---)
+---
 
 [//]: # (## Defining Classes in Python)
 
@@ -122,7 +122,6 @@ This approach also helps in managing and maintaining large codebases more effect
 [//]: # ()
 [//]: # (This method returns a string with the person's name and age, which is then stored in the greeting variable.)
 
----
 
 ## Defining Classes in Java
 
@@ -214,17 +213,10 @@ public class Person {
         this.age = age;
     }
 
-    // Getter para name
+    // Getters
     public String getName() {
         return name;
     }
-
-    // Setter para name
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    // Getter para age
     public int getAge() {
         return age;
     }
@@ -315,6 +307,7 @@ This means they cannot be accessed directly from outside the class.
 **Getter and Setter Methods:** The class provides **getName**, **setName**, **getAge**, and **setAge** methods to access and modify the private attributes.
 These methods ensure that the data is validated before any changes are made (e.g., age cannot be negative).
 
+---
 
 [//]: # (```python)
 
@@ -444,8 +437,36 @@ public class Cat extends Animal {
 }
 ```
 
+---
+
+## Principles - Inheritance - Subclasses
+
+```java
+// Subclass Cat
+public class Cat extends Animal {
+    
+    private String color;
+
+    public Cat(String name, String color) {
+        super(name, "Cat"); // Call the Animal constructor
+        this.color = color;
+    }
+
+    @Override
+    public String makeSound() {
+        return "Meow!";
+    }
+
+    public String climb() {
+        return name + " is climbing a tree";
+    }
+}
+```
+
 **Dog** is a subclass that inherits from **Animal**. It overrides the **makeSound()** method and adds a new attribute **breed** and a new method **fetch()**.
 **Cat** subclass inherits from **Animal**, overrides the **makeSound()** method, and adds a new attribute **color** and a new method **climb()**.
+
+---
 
 [//]: # (```python)
 
@@ -507,6 +528,8 @@ public abstract class Animal {
 **Animal** class is an abstract base class.
 
 It contains an abstract method **makeSound()**, which means that any subclass must implement this method.
+
+---
 
 [//]: # (```python)
 
