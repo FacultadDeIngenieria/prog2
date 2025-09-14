@@ -55,63 +55,78 @@ This approach also helps in managing and maintaining large codebases more effect
 - **1990s and 2000s:** Java and C# dominate object-oriented development.
 - **Present:** OOP remains one of the most widely used paradigms.
 
-<!---
-## Defining Classes in Python
 
-```python
+[//]: # (## Defining Classes in Python)
 
-class Person:
+[//]: # ()
+[//]: # (```python)
 
-    def __init__(self, name: str, age: int) -> None:
+[//]: # (class Person:)
 
-        self.name : str = name
+[//]: # ()
+[//]: # (    def __init__&#40;self, name: str, age: int&#41; -> None:)
 
-        self.age : int = age
+[//]: # ()
+[//]: # (        self.name : str = name)
 
-    
-    def greet(self) -> str:
+[//]: # ()
+[//]: # (        self.age : int = age)
 
-        return f"Hello, my name is {self.name} and I am {self.age} years old."
+[//]: # ()
+[//]: # (    )
+[//]: # (    def greet&#40;self&#41; -> str:)
 
-```
+[//]: # ()
+[//]: # (        return f"Hello, my name is {self.name} and I am {self.age} years old.")
 
+[//]: # (```)
 
-In Python, the **__ init __** method is a special method used for initializing a new instance of a class.
+[//]: # ()
+[//]: # (In Python, the **__ init __** method is a special method used for initializing a new instance of a class.)
 
-It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.
+[//]: # ()
+[//]: # (It is called constructor method, and it does not return anything. Instead, it initializes the attributes of the instance and sets up the object.)
 
+[//]: # ()
+[//]: # ()
+[//]: # (Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.)
 
-Inside the constructor, **self.name : str = name;** assigns the value of the parameter name to the instance variable **name**.
+[//]: # ()
+[//]: # (Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.)
 
-Similarly, **self.age : int = age;** assigns the value of the parameter age to the instance variable **age**.
+[//]: # ()
+[//]: # ()
+[//]: # (## Instantiating Classes in Python)
 
----
+[//]: # ()
+[//]: # (```python)
 
-## Instantiating Classes in Python
+[//]: # (# Instantiation of Person)
 
+[//]: # ()
+[//]: # (matias : Person = Person&#40;name="Matias", age=29&#41;)
 
-```python
+[//]: # ()
+[//]: # ()
+[//]: # (# Using the greet method)
 
-# Instantiation of Person
+[//]: # ()
+[//]: # (greeting : str = matias.greet&#40;&#41;)
 
-matias : Person = Person(name="Matias", age=29)
+[//]: # ()
+[//]: # (print&#40;greeting&#41;)
 
+[//]: # (```)
 
-# Using the greet method
+[//]: # ()
+[//]: # ()
+[//]: # (**matias = Person&#40;name="Matias", age=29&#41;** creates a new instance of the Person class.)
 
-greeting : str = matias.greet()
+[//]: # ()
+[//]: # (**greeting = matias.greet&#40;&#41;** calls the greet method on the **matias** instance.)
 
-print(greeting)
-
-```
-
-
-**matias = Person(name="Matias", age=29)** creates a new instance of the Person class.
-
-**greeting = matias.greet()** calls the greet method on the **matias** instance.
-
-This method returns a string with the person's name and age, which is then stored in the greeting variable.
--->
+[//]: # ()
+[//]: # (This method returns a string with the person's name and age, which is then stored in the greeting variable.)
 
 
 ---
@@ -235,7 +250,6 @@ public class Person {
 
 [//]: # (        self.__age: int = age    # private attribute)
 
-[//]: # ()
 [//]: # (    # Public method to access private attribute)
 
 [//]: # (    def get_name&#40;self&#41; -> str:)
@@ -300,7 +314,6 @@ This means they cannot be accessed directly from outside the class.
 **Getter and Setter Methods:** The class provides **getName**, **setName**, **getAge**, and **setAge** methods to access and modify the private attributes.
 These methods ensure that the data is validated before any changes are made (e.g., age cannot be negative).
 
----
 
 [//]: # (```python)
 
@@ -325,10 +338,10 @@ These methods ensure that the data is validated before any changes are made (e.g
 
 [//]: # (These methods ensure that the data is validated before any changes are made &#40;e.g., age cannot be negative&#41;.)
 
+
 ---
 
 ## Principles - Inheritance - Base Class
-
 
 Ability to create new classes based on existing ones.
 
@@ -408,26 +421,6 @@ public class Dog extends Animal {
         return name + " is fetching the ball";
     }
 }
-
-// Subclass Cat
-public class Cat extends Animal {
-    
-    private String color;
-
-    public Cat(String name, String color) {
-        super(name, "Cat"); // Call the Animal constructor
-        this.color = color;
-    }
-
-    @Override
-    public String makeSound() {
-        return "Meow!";
-    }
-
-    public String climb() {
-        return name + " is climbing a tree";
-    }
-}
 ```
 
 ---
@@ -459,7 +452,6 @@ public class Cat extends Animal {
 **Dog** is a subclass that inherits from **Animal**. It overrides the **makeSound()** method and adds a new attribute **breed** and a new method **fetch()**.
 **Cat** subclass inherits from **Animal**, overrides the **makeSound()** method, and adds a new attribute **color** and a new method **climb()**.
 
----
 
 [//]: # (```python)
 
@@ -522,7 +514,6 @@ public abstract class Animal {
 
 It contains an abstract method **makeSound()**, which means that any subclass must implement this method.
 
----
 
 [//]: # (```python)
 
