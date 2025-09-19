@@ -6,6 +6,5 @@ permalink: /practice/5
 
 # TP 5
 
-[Python](https://classroom.github.com/a/CBSC2lbe)
 
-[Java](https://classroom.github.com/a/LAj421xA)
+[Java](https://classroom.github.com/a/cIoyZfIc)
