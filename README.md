@@ -28,8 +28,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 2. [TP2](practice/2)
 3. [TP3](practice/3)
 4. [TP4](practice/4)
-
-[//]: # (5. [TP5]&#40;practice/5&#41;)
+5. [TP5](practice/5)
 
 [//]: # (6. [TP University]&#40;https://classroom.github.com/a/wJgSLMuH&#41;)
 
