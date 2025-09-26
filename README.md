@@ -9,8 +9,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 6. [Recursion](recursion)
 7. [Object-Oriented Programming (OOP)](oop)
 8. [Classes](classes)
-
-[//]: # (9. [Abstract Classes & Inheritance]&#40;abstract&#41;)
+9. [Abstract Classes & Inheritance](inheritance)
 
 [//]: # (10. [Polymorphism and interfaces]&#40;polymorphism&#41;)
 

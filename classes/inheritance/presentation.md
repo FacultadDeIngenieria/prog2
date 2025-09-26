@@ -1,3 +1,4 @@
+class: center, middle, inverse
 
 # Abstract Classes and Inheritance in Java
 
