@@ -38,3 +38,5 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
    1. [Quadratic](additional-practice/eq-snd-grade)
    2. [Cars](additional-practice/simple-car) 
 
+[//]: # (2. Práctica Parcial:)
+[//]: # (   1. [Parcial 1]&#40;additional-practice/parcial-1&#41;)
