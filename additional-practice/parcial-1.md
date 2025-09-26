@@ -9,8 +9,6 @@ permalink: /additional-practice/parcial-1
 
 A continuación encontrarás una serie de ejercicios pensados para practicar Programación Orientada a Objetos en Java. Cada enunciado describe un problema que deberás modelar utilizando clases, objetos, encapsulamiento, recursividad y testing.
 
----
-
 ## Ejercicio 1 – Biblioteca Digital
 
 ### Instructions
@@ -75,9 +73,8 @@ class Biblioteca {
         return (libros.get(index).estaPrestado() ? 1 : 0) + contarPrestados(libros, index + 1);
     }
 }
-```
 
-```java
+// Tests
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -106,7 +103,6 @@ class BibliotecaTest {
 
 </details>
 
----
 
 ## Ejercicio 2 – Tienda de Mascotas
 
@@ -242,7 +238,6 @@ class TiendaTest {
 
 </details>
 
----
 
 # Ejercicio 3 – Plataforma de Cursos Online
 
@@ -382,8 +377,6 @@ class PlataformaTest{
 </details>
 
 
----
-
 # Ejercicio 4 – Cine
 
 ### Instructions
@@ -471,7 +464,6 @@ class CineTest {
 
 </details>
 
----
 
 # Ejercicio 5 – Supermercado
 
@@ -587,9 +579,10 @@ class Supermercado {
     }
 }
 
-// Testsimport org.junit.jupiter.api.Test;
+// Tests
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-        import java.time.LocalDate;
+import java.time.LocalDate;
 
 class SupermercadoTest {
     @Test
@@ -623,8 +616,5 @@ class SupermercadoTest {
         assertEquals(1, s.productosDistintosVendidos());
     }
 }
-
 ```
-
 </details>
-
