@@ -1,9 +1,8 @@
 ---
-
 title: Ejercicios adicionales - Parcial 1
 layout: practice
 permalink: /additional-practice/parcial-1
------------------------------------------
+---
 
 # Ejercicios adicionales - Parcial 1
 
