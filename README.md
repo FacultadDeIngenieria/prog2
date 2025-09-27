@@ -39,5 +39,5 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
    2. [Cars](additional-practice/simple-car) 
 
 2. Práctica Parcial:
-   1. [Parcial 1](additional-practice/parcial-1)
-   2. [Parcial 1](additional-practice/parcial-1-solutions)
+   1. [Ejercicios Práctica Parcial 1](additional-practice/parcial-1)
+   2. [Soluciones Práctica Parcial 1](additional-practice/parcial-1-solutions)
