@@ -10,8 +10,7 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 7. [Object-Oriented Programming (OOP)](oop)
 8. [Classes](classes)
 9. [Abstract Classes & Inheritance](inheritance)
-
-[//]: # (10. [Polymorphism and interfaces]&#40;polymorphism&#41;)
+10. [Polymorphism and interfaces](polymorphism)
 
 [//]: # (11. [Coverage]&#40;coverage&#41;)
 
