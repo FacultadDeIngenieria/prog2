@@ -11,10 +11,8 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 8. [Classes](classes)
 9. [Abstract Classes & Inheritance](inheritance)
 10. [Polymorphism and interfaces](polymorphism)
-
-[//]: # (11. [Coverage]&#40;coverage&#41;)
-
-[//]: # (12. [Generics]&#40;generics&#41;)
+11. [Coverage](coverage)
+12. [Generics](generics)
 
 [//]: # (13. [Packages]&#40;https://docs.google.com/presentation/d/1DdAOhl1FPAeZKNiHjDakr3-B_ty--FwowzA8bYkgrh0/edit?usp=sharing&#41;)
 
