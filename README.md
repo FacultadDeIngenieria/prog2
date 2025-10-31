@@ -13,10 +13,10 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 10. [Polymorphism and interfaces](polymorphism)
 11. [Coverage](coverage)
 12. [Generics](generics)
+13. [Exceptions](exceptions)
+
 
 [//]: # (13. [Packages]&#40;https://docs.google.com/presentation/d/1DdAOhl1FPAeZKNiHjDakr3-B_ty--FwowzA8bYkgrh0/edit?usp=sharing&#41;)
-
-[//]: # (14. [Exceptions]&#40;exceptions&#41;)
 
 
 ## Trabajos Prácticos
@@ -38,3 +38,4 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 2. Práctica Parcial:
    1. [Ejercicios Práctica Parcial 1](additional-practice/parcial-1)
    2. [Soluciones Práctica Parcial 1](additional-practice/parcial-1-solutions)
+   2. [Ejemplo Parcial 1: Restaurant](additional-practice/parcial-1-restaurant)
