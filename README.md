@@ -14,7 +14,8 @@ Unirse a Discord: [https://discord.gg/EFtzEPbdh4](https://discord.gg/EFtzEPbdh4)
 11. [Coverage](coverage)
 12. [Generics](generics)
 13. [Exceptions](exceptions)
-14. [Pattern Matching](patternMatching)
+14. [Pattern Matching](pattern-matching)
+15. [Lambda](lambda)
 
 
 [//]: # (13. [Packages]&#40;https://docs.google.com/presentation/d/1DdAOhl1FPAeZKNiHjDakr3-B_ty--FwowzA8bYkgrh0/edit?usp=sharing&#41;)

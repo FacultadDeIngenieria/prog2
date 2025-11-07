@@ -16,7 +16,9 @@ class: center, middle, inverse
 8. Best Practices
 9. Conclusion
 
+
 ---
+
 
 ## What is Pattern Matching?
 
@@ -38,20 +40,31 @@ if (obj instanceof Person p) {
 }
 ```
 
+
 ---
 
+
 ## Motivation and Evolution
+
+
 •	Java 14: Preview of pattern matching for instanceof.
 •	Java 16: Records introduced, enabling structural data models.
 •	Java 17: Sealed classes and interfaces (foundation for exhaustive matching).
 •	Java 21: Pattern matching for switch and record deconstruction finalized.
 
-Goal:
-Simplify conditional logic, reduce casting boilerplate, and make switch more expressive and safe.
+Goal:   
 
---- 
+- Simplify conditional logic
+- reduce casting boilerplate
+- make switch more expressive and safe.
+
+
+---
+
 
 ## Pattern Matching with instanceof
+
+
 
 ```java
 public class InstanceOfExample {
@@ -72,7 +85,11 @@ public class InstanceOfExample {
 ✅ Binds a variable (s, n) automatically on success.
 ✅ Safe, readable, and eliminates manual casts.
 
+
+
 ---
+
+
 
 ## Pattern Matching with switch
 
@@ -88,17 +105,21 @@ static String formatObject(Object obj) {
 }
 
 public static void main(String[] args) {
+    
     System.out.println(formatObject("Hello"));
+    
     System.out.println(formatObject(42));
+    
     System.out.println(formatObject(true));
+    
 }
 ```
 
-✅ Each case can have a pattern variable.
-✅ null can be matched directly.
-✅ Type safety verified at compile time.
-
---- 
+- ✅ Each case can have a pattern variable.
+- ✅ null can be matched directly.
+- ✅ Type safety verified at compile time.
+- 
+---
 
 ## Record Patterns
 
@@ -124,7 +145,11 @@ public static void main(String[] args) {
 ✅ Deconstructs record fields directly in the pattern.
 ✅ Guard (when) adds conditional logic.
 
+
+
 ---
+
+
 
 ## Nested Record Patterns
 
@@ -148,7 +173,11 @@ static String describePerson(Person p) {
 ✅ Fully deconstructs nested records in one expression.
 ✅ Guards provide fine-grained control.
 
+
+
 ---
+
+
 
 ## Exhaustiveness and Sealed Types
 
@@ -173,7 +202,11 @@ static double area(Shape s) {
 ✅ The compiler verifies all permitted subtypes are covered.
 ✅ No default needed when exhaustive.
 
---- 
+
+
+---
+
+
 
 ## Guarded Patterns (when)
 
@@ -193,7 +226,11 @@ static String describeNumber(Number n) {
 ✅ Clean separation between pattern shape and condition.
 ✅ Prevents deep nested if-else chains.
 
+
+
 ---
+
+
 
 ## Advanced Example
 
@@ -201,15 +238,20 @@ static String describeNumber(Number n) {
 sealed interface Event permits Login, Logout, Error {}
 
 record Login(String user) implements Event {}
+
 record Logout(String user) implements Event {}
+
 record Error(int code, String message) implements Event {}
 
 static String handle(Event e) {
     return switch (e) {
         case Login(String u) -> "User " + u + " logged in.";
+        
         case Logout(String u) -> "User " + u + " logged out.";
+        
         case Error(int c, String m) when c >= 500 ->
                 "Server error " + c + ": " + m;
+        
         case Error(int c, String m) ->
                 "Client error " + c + ": " + m;
     };
@@ -218,7 +260,7 @@ static String handle(Event e) {
 
 ✅ Combines record deconstruction, sealing, and guards.
 
---- 
+---
 
 ## Best Practices
 
@@ -229,7 +271,11 @@ static String handle(Event e) {
 •	Model data with records for natural pattern deconstruction.
 •	Use type patterns (instanceof) for small, isolated checks.
 
+
+
 ---
+
+
 
 ## Common Pitfalls
 
@@ -238,7 +284,11 @@ static String handle(Event e) {
 •	Overusing nested patterns → readability issues.
 •	Confusing runtime type checks with compile-time patterns (generics).
 
+
+
 ---
+
+
 
 ## Conclusion
 •	Pattern Matching in Java 21 is concise, safe, and expressive.
