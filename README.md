@@ -24,12 +24,11 @@
 ## Trabajos Prácticos
 - TP 1 Introduction to Java: [Repositorio](https://classroom.github.com/a/_rgr_xF5)
 - TP 2 Java Collections: [Repositorio](https://classroom.github.com/a/LIK55jDL)
-- TP 3.1 OOP: Cinema [Repositorio](https://classroom.github.com/a/Kaw5zmxY)
+- TP 3.1 OOP: Cinema [Repositorio](https://classroom.github.com/a/Kaw5zmxY) & [Solution](https://github.com/diegobaldassare/cinema)
 - TP 3.2 OOP: Elevator [Repositorio](https://classroom.github.com/a/dq_sogn6)
-- TP 4 Herencia: Figures, University, Employees & Hotel. [Repositorio](https://classroom.github.com/a/DBnNPK9u) y [Enunciado](practice/inheritance)
-
-[//]: # (- TP 5 Recursion: [Repositorio]&#40;https://classroom.github.com/a/eRLDNe1l&#41;)
-[//]: # (- TP 6 TDD: [Repositorio]&#40;https://classroom.github.com/a/EvMY5HWu&#41;)
+- TP 4 Herencia: Figures, University, Employees & Hotel. [Repositorio](https://classroom.github.com/a/DBnNPK9u), [Enunciado](practice/inheritance) & [Solution](https://github.com/diegobaldassare/hotel)
+- TP 5 Recursion: [Repositorio](https://classroom.github.com/a/eRLDNe1l), [Enunciado](practice/recursion) & [Solution](https://github.com/diegobaldassare/recursion)
+- TP 6 TDD: [Repositorio](https://classroom.github.com/a/EvMY5HWu) & [Solution](https://github.com/diegobaldassare/test-driven-development)
 
 [//]: # (- TP 7 Interfaces)
 [//]: # (- TP 8 Generics)
