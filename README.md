@@ -63,5 +63,4 @@
 ## Práctica Parcial:
 - [Ejercicios Práctica Parcial 1](additional-practice/parcial-1)
 - [Soluciones Práctica Parcial 1](additional-practice/parcial-1-solutions)
-
-[//]: # (   2. [Ejemplo Parcial 1: Restaurant]&#40;additional-practice/parcial-1-restaurant&#41;)
+- [Simulacro Parcial 1: Restaurant](additional-practice/parcial-1-restaurant)
