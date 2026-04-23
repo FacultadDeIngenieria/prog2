@@ -8,9 +8,10 @@ permalink: /additional-practice/parcial-1-solutions
 
 ## Ejercicio 1 – Biblioteca Digital
 
-### UML Solution Diagram
-.center[![Model]({{site.baseurl}}/additional-practice/uml-biblioteca.png)]
+### Diagrama UML
+![Diagrama UML: Biblioteca Digital (Usuario, Libro, Biblioteca)](uml-biblioteca.png){: style="display: block; margin-left: auto; margin-right: auto;"}
 
+### Código en Java
 ```java
 import java.util.ArrayList;
 import java.util.List;
