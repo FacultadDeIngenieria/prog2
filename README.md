@@ -60,7 +60,7 @@
 [//]: # (   2. [Cars]&#40;additional-practice/simple-car&#41; )
 
 
-## Práctica Parcial:
+## Práctica Parcial
 - [Ejercicios Práctica Parcial 1](additional-practice/parcial-1)
 - [Soluciones Práctica Parcial 1](additional-practice/parcial-1-solutions)
 - [Simulacro Parcial 1: Restaurant](additional-practice/parcial-1-restaurant)

@@ -22,5 +22,8 @@ Una nueva cadena de restaurantes, "GourmetFlow", está modernizando su operació
 10. Se deben implementar validaciones necesarias (por ejemplo, solo agregar platos del menú; no modificar pedidos servidos).
 
 ## Solución
-Entregar el código implementado en un repositorio.
+Entregar el código implementado en un repositorio
 Luego, compartiremos un modelo de solución [acá](https://github.com/diegobaldassare/restaurant).
+
+### Diagrama UML
+![Diagrama UML: Gestión de Restaurante Digital (Plato, Pedido, Restaurante, EstadoPedido)](uml-restaurant.png){: style="display: block; margin-left: auto; margin-right: auto;"}
