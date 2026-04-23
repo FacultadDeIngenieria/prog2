@@ -49,7 +49,7 @@
 [//]: # (6. [TP University]&#40;https://classroom.github.com/a/KX5w2Av7&#41;)
 
 ## Recursos
-1. [Instalación de Java y Python](utils/installation)
+- [Instalación de Java y Python](utils/installation)
 
 [//]: # (## Ejercicios adicionales)
 
@@ -59,11 +59,9 @@
 
 [//]: # (   2. [Cars]&#40;additional-practice/simple-car&#41; )
 
-[//]: # ()
-[//]: # (2. Práctica Parcial:)
 
-[//]: # (   1. [Ejercicios Práctica Parcial 1]&#40;additional-practice/parcial-1&#41;)
-
-[//]: # (   2. [Soluciones Práctica Parcial 1]&#40;additional-practice/parcial-1-solutions&#41;)
+## Práctica Parcial:
+- [Ejercicios Práctica Parcial 1](additional-practice/parcial-1)
+- [Soluciones Práctica Parcial 1](additional-practice/parcial-1-solutions)
 
 [//]: # (   2. [Ejemplo Parcial 1: Restaurant]&#40;additional-practice/parcial-1-restaurant&#41;)
