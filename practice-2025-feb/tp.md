@@ -54,5 +54,4 @@ de la materia en la defensa oral. Cualquier detección de plagio es sensible a
 sanciones de acuerdo lo establecido por el reglamento académico.
 
 ## Demo de ejemplo
-Cómo ejemplo se puede ver el juego en el siguiente link:
-https://www.youtube.com/watch?v=XhUqV456MFI
+Cómo ejemplo se puede ver el juego en el siguiente [link](https://www.youtube.com/watch?v=XhUqV456MFI)

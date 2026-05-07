@@ -35,7 +35,7 @@ Agregue al **Interval** los siguientes métodos:
 _evaluar_ los elementos sin necesidad de implementar un nuevo método para cambiar el criterio.
 No sería práctico implementar un nuevo Intervalo cada vez que, por ejemplo, se quiera buscar
 el primer número positivo o el tercer número consecutivo que sea par. 
-Lo mismo ocurre para _findAdd_. ¿Que tipos de elementos deben estar contenidos en la lista retornada?
+Lo mismo ocurre para _findAll_. ¿Que tipos de elementos deben estar contenidos en la lista retornada?
 
 [//]: # (## Ejercicio 4)
 
