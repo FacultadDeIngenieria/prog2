@@ -10,10 +10,10 @@
 7. [TDD](tdd)
 8. [Coverage](coverage)
 9. [Object-Oriented Programming (OOP)](oop)
-12. [Polymorphism and interfaces](polymorphism)
+10. [Polymorphism and interfaces](polymorphism)
+11. [Generics](generics)
+12. [Exceptions](exceptions)
 
-[//]: # (14. [Generics]&#40;generics&#41;)
-[//]: # (15. [Exceptions]&#40;exceptions&#41;)
 [//]: # (16. [Pattern Matching]&#40;pattern-matching&#41;)
 [//]: # (17. [Lambda]&#40;lambda&#41;)
 
@@ -30,9 +30,9 @@
 - TP 5 Recursion: [Enunciado](practice/recursion), [Repositorio](https://classroom.github.com/a/eRLDNe1l) & [Solution](https://github.com/diegobaldassare/recursion)
 - TP 6 TDD: [Repositorio](https://classroom.github.com/a/EvMY5HWu) & [Solution](https://github.com/diegobaldassare/test-driven-development)
 - TP 7 Interfaces: [Enunciado](practice/interfaces) y [Repositorio](https://classroom.github.com/a/cuxWzHPr)
+- TP 8 Generics: [Enunciado](practice/generics) y [Repositorio](https://classroom.github.com/a/PaWNMWyr)
+- TP 9 Exceptions: [Enunciado](practice/exceptions) y [Repositorio](https://classroom.github.com/a/9wTakJfX)
 
-[//]: # (- TP 8 Generics)
-[//]: # (- TP 9 Exceptions)
 [//]: # (- TP 10 Patterns)
 
 [//]: # (1. [TP1]&#40;practice/1&#41;)
