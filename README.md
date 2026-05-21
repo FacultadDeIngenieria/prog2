@@ -53,7 +53,7 @@
 - [Simulacro Parcial 1: Restaurant](additional-practice/parcial-1-restaurant)
 
 ## Segundo Parcial
-- TP Integrador: [Enunciado](practice/tp)
+- TP Integrador: [Enunciado](practice/tp) y [Repositorio](https://classroom.github.com/a/sfM7dY8R)
 
 ## Recursos
 - [Instalación de Java y Python](utils/installation)
